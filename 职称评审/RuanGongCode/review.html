@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>广西专业技术人员服务平台231</title>
+    <link rel="stylesheet" href="./icofont/iconfont.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- Element UI -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/element-ui/lib/theme-chalk/index.css"
+    />
+    <link rel="stylesheet" href="./css/review.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="./img/index/logo_zc.png" alt="" class="logo_zc" />
+      <ul class="header_right r">
+        <li class="l">
+          <img src="./img/index/duanxin.png" alt="" class="duanxin" />
+        </li>
+        <li class="l">
+          <span class="iconfont icon-fangda" title="显示全屏"></span>
+        </li>
+        <li class="l">
+          <span class="iconfont icon-ziti" title="字体设置"></span>
+        </li>
+        <li class="l">
+          <span class="iconfont icon-weixin" title="消息中心"></span>
+        </li>
+        <li class="l">
+          <span class="iconfont icon-shezhi" title="个人中心"></span>
+        </li>
+        <li class="l">
+          <span class="iconfont icon-tuichu" title="退出系统"></span>
+        </li>
+      </ul>
+
+      <ul class="shouye">
+        <li class="l">
+          <a href="">首页</a>
+        </li>
+        <li class="l">
+          <a href="">个人资料</a>
+        </li>
+        <li class="l">
+          <a href="">证书管理</a>
+        </li>
+        <li class="l">
+          <a href="">职称评审</a>
+        </li>
+        <li class="l">
+          <a href="">报表下载</a>
+        </li>
+        <li class="l">
+          <a href="">费用管理</a>
+        </li>
+        <li class="l">
+          <a href="">
+            帮助中心
+            <img
+              src="./img/index/bullet-question-w-r.png"
+              alt=""
+              style="width: 20px; height: 20px"
+            />
+          </a>
+        </li>
+        <li class="l">
+          <a href="">意见建议</a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <div id="review-app" class="container">
+        <div class="title">
+          <p>职称评审</p>
+        </div>
+        <div class="attention">
+          <el-alert type="info" show-icon>
+            <template v-slot:title>
+              <p
+                style="
+                  font-weight: 700;
+                  font-size: 16px;
+                  line-height: 18px;
+                  color: #1a56a8;
+                "
+              >
+                填报说明
+              </p>
+              <p style="color: #1a56a8; font-size: 14px; margin: 5px 0 0 0">
+                &nbsp&nbsp欢迎您参加广西壮族自治区专业技术资格的申报，为使您更为准确的掌握申报评审的相关政策，减少因政策原因导致的申报障碍，敬请认真阅读并掌握评审相关的政策规定。主要包括以下政策：
+              </p>
+              <p style="color: #1a56a8; font-size: 14px; margin: 5px 0 0 0">
+                &nbsp&nbsp1.国家、自治区职称管理方面的政策文件
+              </p>
+              <p style="color: #1a56a8; font-size: 14px; margin: 5px 0 0 0">
+                &nbsp&nbsp2.关于专业技术资格评审的一般程序规定及要求
+              </p>
+              <p style="color: #1a56a8; font-size: 14px; margin: 5px 0 0 0">
+                &nbsp&nbsp3.个人所选择申报系列的专业技术资格评审条件；
+              </p>
+              <p style="color: #1a56a8; font-size: 14px; margin: 5px 0 0 0">
+                &nbsp&nbsp4.相关专项职称评审政策；
+              </p>
+              <p style="color: #1a56a8; font-size: 14px; margin: 5px 0 0 0">
+                &nbsp&nbsp5.当年度的自治区评审部署文件及所选择申报系列的评审部署文件；
+              </p>
+              <p style="color: #1a56a8; font-size: 14px; margin: 5px 0 0 0">
+                &nbsp&nbsp6.其他根据个人情况需要掌握的职称政策；
+              </p>
+              <p style="color: #1a56a8; font-size: 14px; margin: 5px 0 0 0">
+                &nbsp&nbsp以上政策均可在广西壮族自治区人力资源和社会保障厅网站上“年度职称评审工作专题”查询到；如网站查询不到或对政策文件把握不准，您也可根据我们在该网站提供的联系方式选择到您申报的评委会咨询了解。
+              </p>
+            </template>
+          </el-alert>
+        </div>
+        <div class="review-create">
+          <b>我要申报：</b>
+          <el-button
+            type="success"
+            icon="el-icon-plus"
+            size="medium"
+            @click="changeShenBaoVisible"
+            >新建申报数据</el-button
+          >
+          <el-dialog
+            title="选择评审会"
+            :visible.sync="ShenBaoVisible"
+            width="50%"
+          >
+            <el-form ref="PingShenHuiForm">
+              <el-form-item label="申报等级:">
+                <el-radio-group v-model="SelectJiBie">
+                  <el-radio-button
+                    v-for="(item, index) in JiBie"
+                    :label="item"
+                    :key="index"
+                    >{{item.desc}}</el-checkbox-button
+                  >
+                </el-radio-group>
+              </el-form-item>
+              <el-form-item label="申报系列">
+                <el-select v-model="SelectXiLie">
+                  <el-option v-for="(item, index) in XL_options" :key="index" :label="item.label" :value="item.value"></el-option>
+                </el-select>
+              </el-form-item>
+              <el-form-item label="申报评审会">
+                <el-select v-model="PingShenHui">
+                  <el-option v-for="(item, index) in PS_options" :key="index" :label="item.label" :value="item.value"></el-option>
+                </el-select>
+              </el-form-item>
+            </el-form>
+            <span slot="footer" class="dialog-footer">
+              <el-button @click="changeShenBaoVisible">取 消</el-button>
+              <el-button type="primary" @click="submitPingShenHui"
+                >确 定</el-button
+              >
+            </span>
+          </el-dialog>
+        </div>
+        <div class="review-list">
+          <div
+            v-for="(item, index) in PingShenJiLu"
+            :key="index"
+            class="review-item"
+          >
+            <div class="item-title">
+              <p style="font-size: 16px; font-weight: bold; color: #1a56a8">
+                #{{index+1}}&nbsp职称评审
+              </p>
+              <div>
+                <el-button type="danger" icon="el-icon-tickets" size="mini"
+                  >推荐表</el-button
+                >
+                <el-button type="danger" icon="el-icon-tickets" size="mini"
+                  >评审表</el-button
+                >
+                <el-button type="primary" icon="el-icon-tickets" size="mini"
+                  >写入数据</el-button
+                >
+                <el-button type="primary" icon="el-icon-medal" size="mini"
+                  >重置评委会</el-button
+                >
+                <el-button
+                  type="warning"
+                  icon="el-icon-edit-outline"
+                  size="mini"
+                  >编辑</el-button
+                >
+              </div>
+            </div>
+            <div class="item-body">
+              <el-row>
+                <el-col :span="22">
+                  <el-steps
+                    :active="item.progress"
+                    finish-status="success"
+                    align-center
+                  >
+                    <el-step title="个人申报"></el-step>
+                    <el-step title="单位审核"></el-step>
+                    <el-step title="主管单位/职改办推荐"></el-step>
+                    <el-step title="评委会所在职改办"></el-step>
+                    <el-step title="材料报送成功"></el-step>
+                  </el-steps>
+                </el-col>
+                <el-col :span="2">
+                  <el-button icon="el-icon-timer" type="warning" size="mini"
+                    >流程记录</el-button
+                  >
+                </el-col>
+              </el-row>
+
+              <el-row>
+                <el-col class="form-col form-title" :span="4">申报年度</el-col>
+                <el-col class="form-col form-content" :span="8"
+                  >{{item.F_ShenBaoNianDu}}</el-col
+                >
+                <el-col class="form-col form-title" :span="4"
+                  >评委会所属职改办</el-col
+                >
+                <el-col class="form-col form-content" :span="8"
+                  >{{item.F_ZhiGaiBanName}}</el-col
+                >
+              </el-row>
+              <el-row>
+                <el-col class="form-col form-title" :span="4"
+                  >拟申报资格名称</el-col
+                >
+                <el-col class="form-col form-content" :span="8"
+                  >{{item.ZiGeXiLie}}/{{item.F_ZiGeJiBie}}/{{item.F_ZiGeMingCheng}}</el-col
+                >
+                <el-col class="form-col form-title" :span="4"
+                  >评审会名称</el-col
+                >
+                <el-col class="form-col form-content" :span="8"
+                  >{{item.F_PinShenName}}</el-col
+                >
+              </el-row>
+              <el-row>
+                <el-col class="form-col form-title" :span="4">评审等级</el-col>
+                <el-col class="form-col form-content" :span="8"
+                  >{{item.F_PinShenLevel}}</el-col
+                >
+                <el-col class="form-col form-title" :span="4">创建时间</el-col>
+                <el-col class="form-col form-content" :span="8"
+                  >{{item.F_CreateTime}}</el-col
+                >
+              </el-row>
+              <el-row>
+                <el-col class="form-col form-title" :span="4"
+                  >材料报送时间段</el-col
+                >
+                <el-col class="form-col form-content" :span="20"
+                  >{{item.ShenBaoConfigInfo}}</el-col
+                >
+              </el-row>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <test></test>
+    </footer>
+    <!-- Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- Element UI -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <!-- Review Javascript -->
+    <script type="module" src="./js/review.js"></script>
+  </body>
+</html>

@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>广西专业技术人员服务平台220</title>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css"/>
+    <style>
+        *{
+            margin:0;padding:0;
+            list-style:none;
+        }
+        body{background-color: rgb(206, 198, 189);height: 1000px;}
+        .main{
+            width: 650px;height:900px;
+            background-color: white;
+            margin: 20px auto;
+            font-size: 0;
+        }
+        input{
+            width: 620px;height: 30px;
+            margin: 5px 0 20px 10px;
+            outline: none;
+            border-radius: 5px;
+            border: 1px gray solid;
+            padding: 0 0 0 10px;
+        }
+        .main .phone{
+            width: 460px;height: 30px;
+            margin: 5px 0 20px 10px;
+            outline: none;
+            border-radius: 5px;
+            border: 1px gray solid;
+            padding: 0 0 0 10px;
+            border-right: none;
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0;
+        }
+        .main .dianjihuoqu{
+            display: inline-block;
+            width: 155px;height: 30px;
+            text-decoration: none;
+            border: 1px gray solid;
+            font-size: 14px;
+            line-height: 28px;
+            border-bottom-right-radius: 5px;
+            border-top-right-radius: 5px;
+            text-align: center;
+        }
+        .main .dianjihuoqu:hover{background-color: rgb(231, 225, 225);}
+        span{margin: 0 0 0 10px; font-weight: bold;font-size: 15px;}
+        .main .fanhui{
+            text-decoration: none;
+            margin: 0 0 0 10px;
+            border: 1px gray solid;
+            border-radius: 5px;
+            width: 80px;height: 30px;
+            display: inline-block;
+            text-align: center;
+            line-height: 30px;
+            font-size: 14px;
+            color: black;
+        }
+        .main .fanhui:hover{background-color: gainsboro;}
+        .main .chuangjian{
+            display: inline-block;
+            width: 80px;height: 30px;
+            font-size: 14px;
+            color: white;
+            text-decoration: none;
+            background-color: rgb(78, 108, 240);
+            text-align: center;
+            line-height: 30px;
+            border-radius: 5px;
+            float: right;
+            margin: 0 17px 0 0;
+        }
+        .main .chuangjian:hover{background-color: rgb(59, 92, 236);}
+        .main .zhengjianleixing{width: 630px; height: 30px;
+        margin: 10px 0 20px 10px;
+        border-radius: 5px;
+        border: 1px gray solid;
+        outline: none;
+        }
+        .main .safequ{width: 630px; height: 30px;
+        margin: 10px 0 20px 10px;
+        border-radius: 5px;
+        border: 1px gray solid;
+        outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main" id="main">
+        <!-- <form action=""> -->
+            <div style="color: white;background-color: rgb(91, 123, 230);width: 100px;height: 30px;
+                        font-size: 16px;line-height: 30px;text-align: center; margin: 0 0 30px 0;">
+                用户注册
+            </div>
+            <hr>
+            <span>E-Mail</span>
+            <input type="email" v-model="item.email">
+            <span>证件类型</span>
+            <select name="" id="" class="zhengjianleixing" v-model="item.documentstype">
+                <option value="居民身份证" selected>居民身份证</option>
+                <option value="港澳居民来往内地通行证">港澳居民来往内地通行证</option>
+                <option value="台湾居民来往大陆通行证">台湾居民来往大陆通行证</option>
+                <option value="外国人永久居留身份证">外国人永久居留身份证</option>
+                <option value="护照">护照</option>
+                <option value="其他类型">其他类型</option>
+            </select>
+            <span>证件号码</span>
+            <input type="text" placeholder="身份证号、护照号等" v-model="item.documentsnumber">
+            <span>姓 名</span>
+            <input type="text" v-model="item.truename">
+            <span>密 码</span>
+            <input type="password" placeholder="6-12位的字母或数字" v-model="item.password">
+            <span>确认密码</span>
+            <input type="password" v-model="item.passwordtrue">
+            <!-- <span>选择安全问题</span>
+            <select name="" id="" class="safequ">
+                <option value="请选择密保问题" disabled="disabled">请选择密保问题</option>
+                <option value="您母亲的姓名是？">您母亲的姓名是？</option>
+                <option value="您配偶的生日是？">您配偶的生日是？</option>
+                <option value="您的学号（或工号）是？">您的学号（或工号）是？</option>
+                <option value="您母亲的生日是？">您母亲的生日是？</option>
+                <option value="您小学班主任的生日是？">您小学班主任的生日是？</option>
+                <option value="您父亲的生日是？">您父亲的生日是？</option>
+                <option value="你配偶的姓名是？">你配偶的姓名是？</option>
+                <option value="您初中班主任的名字时？">您初中班主任的名字时？</option>
+                <option value="您最熟悉的童年好友名字是？">您最熟悉的童年好友名字是？</option>
+                <option value="您最熟悉的学校宿舍室友名字是？">您最熟悉的学校宿舍室友名字是？</option>
+                <option value="对您影响最大的人的名字是？">对您影响最大的人的名字是？</option>
+                <option value="自定义安全问题">自定义安全问题</option>
+            </select>
+            <span>安全答案</span> 
+            <input type="text">-->
+            <span>手机号码</span><br>
+            <input type="text" class="phone" v-model="item.phonenumber">
+            <a href="" class="dianjihuoqu">点击获取验证码</a>
+            <span>验证码</span>
+            <input type="text">
+            <a href="./login.html" class="fanhui">返回登陆</a>
+            <input type="submit" class="chuangjian" value="创建用户" @click="SubBtn();">
+            <!-- <button type="submit" class="chuangjian" @click="SubBtn();">创建用户</button> -->
+        <!-- </form> -->
+    </div>
+    
+    <div id="app">
+        <template>
+          <!-- <el-button type="text" @click="open">点击打开 Message Box</el-button> -->
+        </template>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- Element UI -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <!-- Profile Javascript -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/GRregister.js"></script>
+    <!-- 弹窗 -->
+    <script>
+        var Main = {
+            methods: {
+            open() {
+                this.$alert('<p>1、进行证书审验的专业技术人员，必须先进行注册，注册后才能进行证书审验。<br><br>'+
+                '2、请专业技术人员认真、如实填写有关个人信息。其中姓名、身份证号作为证书审验基本信息，手'+
+                '机号码和邮箱作为专业技术人员登录系统和找回密码工具，一旦确认即不可随意更改。<br><br>'+
+                '<strong>3、相同身份证号，姓名，手机号码和邮箱只允许注册一次。</strong><br><br>'+
+                '4、账号、密码、邮箱、安全问题和安全答案要妥善保管，如密码丢失，可通过注册时预'+
+                '留邮箱、安全问题和安全答案找回密码。账号和密码如被他人盗用责任自负。<br><br>'+
+                '5、注册时身份证号错误需要更改的，请致电 0771-5505013 联系客服处理。</p>', '注册须知', {
+                dangerouslyUseHTMLString: true
+                });
+            }
+            },
+             mounted: function() {   //自动触发写入的函数
+                this.open();
+            } 
+        }
+        var Ctor = Vue.extend(Main)
+        new Ctor().$mount('#app')
+    </script>
+</body>
+</html>
