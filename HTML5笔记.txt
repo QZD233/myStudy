@@ -1,0 +1,210 @@
+万金油开头！！！！CSS重置！！！
+*{
+   margin:0;padding:0;
+   list-style:none;
+ }
+img{display:block;}
+
+1、<i></i>斜体
+2、<hr >一条线
+3、<b></b>字体加粗（应该用更具语义化的strong和em）
+4、<br>换行（wbr软换行）
+5、&nbsp;空格
+6、<ul></ul>无序列表
+7、<ol></ol>有序列表
+8、100%图片撑满屏幕（不出现滑动条）
+9、<del></del>文字增加删除线
+10、<sup></sup>把文字变成上标，10^2（2是上标），sub是下标
+11、<u></u>文字加下划线
+12、type=“disc”实心圆    type=“circle”空心圆    type=“square”实心方块
+13、type=“1”数字排序  type=“a（A）”字母排序   type=“i（I）”罗马数字排序  
+14、<img src=" " title=“鼠标划上去时的提示” alt=“图片加载失败后的文字”>
+15、 target=“_blank”跳转新页面 （打开新标签 <base target="_blank"> 写在head里，所有连接都会打开新标签
+16、../表示上层目录
+17、border=“1px”表示边框  
+18、cellspacing=“0”表示单元格间隙
+19、<tr></tr>行  <td></td>列  <th></th>加粗并水平居中
+	caption 表格标题
+20、align=“center”文字居中
+	valign=“middle” 上下对齐top button
+21、<table></table>建立表格
+22、<col>一列
+23、colspan占据列合并   rowspan占据行合并
+24、<colgroup span="6 " width="100px">表示六列宽为100
+25、radio单选框   CheckBox复选框
+26、submit提交 reset重置清空
+27、<form action="http..." method="post"> </form>表单提交
+28、<span></span>容器
+29、margin :auto让容器本身水平居中（边距左右相等）
+30、font-size:24px设定字体大小
+31、line-height行高（可以用px，也可以用比例值，如font-size为16px则比例值为1则是16px）
+32、边框：solid直线，dashed虚线，dotted点线
+33、行内样式(<style="...">) > ID选择器(#box{}) > 类选择器标(.con{}) > 标签选择器(div{}) > 通用选择器(*{})
+	权重值1000		权重值100		权重值10	权重值1			权重值0
+34、font-family：“宋体” 字体类型
+35、text-indent：2em；首行缩进
+36、text-decoration：underline；文本修饰 添加下划线
+37、RGB 红蓝绿
+38、background-repeat：no-repeat； 背景图不平铺
+39、background-position：right bottom；背景图位置
+40、float：浮动，对div进行排版
+41、overflow：auto；元素溢出(hidden,更好在81集)
+42、clear：left/right/both；浮动
+43、required 使input为必填
+44、<input type="file"/> 上传文件
+45、radio 单选框
+46、checkbox复选框
+    reset重置  bottom按钮  email邮件  url网址输入框  number数值  
+    range滑动条  date/month/week日期控件  search搜索框  color颜色控件  tel电话号码（移动端会自动调用数字键盘） time时间控件
+    当required=“required”表单提交时input不能为空
+    autocomplete=“off”不希望有提示信息
+    autofocus 自动获取焦点，比如进到百度首页会自动定位到搜索框，直接可以输入内容，不用鼠标再点一次
+    pattern=“输入正则表达式+“+”” 正则验证
+    enctype 数据传输类型，比如上传文件要改类型，类似序列化与反序列化
+47、<body style="margin:0">网页边框为0
+48、style="margin:15px"外边距为15px，边距不会累加，谁大选谁
+49、font-weight:bold 字体加粗 
+50、font-style；italic 字体倾斜
+51、text-indent：60px 首行缩进
+52、text-decoration：underline 文本修饰
+53、<html>body{background-image:url(图片地址)}</html> 背景图片
+54、background-repeat：no-repeat 取消平铺
+55、background-position：center center 图片位置
+56、padding 内边距（box-sizing：border-box 向内压缩，不再是撑开盒子）
+57、display：block（块元素）inline（内联（行内）元素）inline-block（内联块元素）
+58、position：absolute 绝对定位
+59、position：relative 相对定位（参考位置，使用绝对定位时必须使用）
+    position：sticky；top：0 粘性定位，半固定元素，随块滑动，超出块时悬浮于顶部
+	z-index：1 定位出现重叠时的优先级，优先级高会全部显示，优先级低时重叠部分会被优先级高的遮挡
+60、position：fixed 固定定位（记得加 left：0；top：0；）
+61、.XX:hover{ XX }鼠标滑动效果，当鼠标滑动发生颜色，隐藏等效果
+62、text-decoration：none（underline：有下划线）超链接取消下划线
+63、list-style：none 列表样式
+64、box-sizing：border-box 内填充向内压缩
+65、<textarea> 多行文本输入
+66、placeholder 文本提示
+67、border-radius：15px 圆角（可以填四个值，还有椭圆）
+68、resize：none（both） 文本多行输入框无法随意改变大小（vertical：仅垂直可调整，horizontal：仅水平可调整）
+69、cursor：pointer 当移动至目标时鼠标指针表变成小手（auto：默认，crosshair：十字线，move：十字箭头）
+		自定义鼠标（ ：url（XXX.ico），auto）
+70、outline：none 取消输入时被选中的文本框出现光圈
+71、overflow: visible(默认)      hidden         auto
+		溢出部分可见	溢出部分隐藏	适当加入滚动条（scroll也行，也有scrolling：none）
+72、overflow-x：同上
+73、overflow-y：同上
+74、ul li:first-child{XXXXX} 列表下的第一个<li></li>
+75、ul li:nth-of-type(even){XXXXX} 列表下的偶数<li></li>(odd:奇数)
+76、ul li:nth-child(n) 选择序号（自然排序）为n的元素
+77、background：linear-gradient（to bottom，green，gray） 颜色自上而下渐变（45deg，，角度渐变）
+78、XXX：：after{ content ：“”；XXX； } 伪元素，使两个容器处于同一空间，记得加position：absolute
+79、box-shadow：0px      2px     5px    1px     black      outset; 容器阴影
+		left值  top值  模糊值  扩大值  影子颜色值  阴影方向（默认内inset）
+80、-webkit-appearance：none 取消复选框外观（存在兼容问题，兼容Chrome）
+81、transition：width（all）   	1s 	ease-in   2s；过渡动画
+		要过渡的属性  过渡时间  过渡方式  延迟时间
+	过渡方式：ease（先慢后快再慢），linear（线性匀速），ease-in（慢速结束），ease-in-out（慢速开始慢速结束）
+82、input[type=‘CheckBox’]：checked{background：XX} 伪类选择器，被选中的复选框发生背景颜色变化
+83、transform: translateY(140px) translateX(-150px);位移效果（或者translate（150px，150px））
+84、transform: scale(1.5，1.5) 放大1.5倍 （0.6）缩小0.6倍
+85、transform-origin:50% 50%; 改变原点（起点）位置，默认在元素的中心
+86、transform: rotateZ(-15deg) 绕Z轴旋转
+    transform：skew（30deg，0）倾斜（分开写有skewX和skewY）
+		scale（）立体元素的厚度
+87、transform: perspective(1000px) rotateX(45deg) 3D效果，旋转时不会改变大小，perspective是观察距离（perspective-origin改变观察视角）
+88、transform-style: preserve-3D 保持3D效果
+89、text-shadow: 5px 5px 5px #222222 文字阴影 （巧用做火焰特效）
+90、@keyframes beat{
+			30%{transform: scale(1.5)};
+			100%{transform: scale(1);}} 定义动画
+91、animation: beat 1.5s infinite ease;使用动画（：定义的动画名、动画时间、动画无限循环、方式）
+	animation-fill-mode：forwards 结束后，停在结束位置
+	animation-direction;alternate 0%到100%再从100%到0%，重复动画
+92、vertical-algin：middle 垂直居中（暂定，实为对齐方式，可以去掉容器底部不贴合情况bottom），
+								必须作用于display：inline-block，最好给父容器设置行高
+93、opacity：1 元素透明（1为不透明，0为完全透明）
+	color：transport 透明颜色
+94、flex-direction:column; justify-content:center; text-align（align-items）：center; 水平、垂直居中（用于容器，父容器加上display：flex）
+95、flex-direction:column; justify-content:space-between 居于父容器上下位置（父容器加上display：flex）
+96、justify-content： flex容器（父容器加上display：flex，flex-start：开始对齐（相当于左浮动，下同），flex-end：结尾对齐，
+				center：中心对齐，space-between：两端对齐，space-around：自动分配间隔，中间间隔是两边的一倍）
+97、flex-wrap：wrap；换行（flex容器中默认不会换行）
+98、flex-grow：1 子元素瓜分父元素剩余空间  
+	 justify-content：space-evevnly 匀称对齐，两边距离和中间距离一样
+99、multiple 多选
+100、<link rel="stylesheet" href="./XXX.css"> 引入外部样式(或者<style>@import url('./XXX.css')</style>这样写问题多不建议使用)
+101、background-attachment：fixed 固定背景，实现交错效果
+102、letter-spacing:2px 字之间的间距（word-spacing 词之间的间距，英文有效）
+103、min-height（max-height）：200px 最小和最大高度，用于自适应，宽也一样 
+104、white-space：nowrap 不让内容折行
+105、text-overflow;ellipsis 添加省略号，配合overflow：hidden使用
+106、<link rel="icon" href="./mario.ico" type="image/x-icon">  //在网页标题左侧显示图标
+     <link rel="shortcut icon" href="./mario.ico" type="image/x-icon"> //在收藏夹显示图标
+     <link rel="dns-prefetch" href="XXXXX"> 解析域名，运行更快
+     <meta XXXXX> 便于网络搜索，维护渲染等的标签
+107、<audio src="XXX路径mp3" controls></audio> 引入音频文件（再加上loop autoplay实现自动播放）
+108、<video src="XXXXmp4" controls></video> 引入视频（同上）
+	<video> <source src=""></source> </video>备选视频
+109、<input type="text" list="elems">
+	<datalist id="elems">
+		<option value="a">	输入的时候提示选项，实现智能提示（后端数据库好用）
+		<option value="ab">
+        </datalist>
+110、<detalis （open为默认列表展开）>
+	<sumary>HTML</summary>		实现简单的折叠列表效果
+	<p>超文本标记语言</p>
+     </details>
+111、<progress min="0" max="100" value="50"></progress>	进度条
+	<meter min="0" max="100" value="50" low="10" high="60"></meter>	测量条,50时在10-60之间颜色会变
+112、time、mark	标记文本，mark可以改变文本背景色
+113、backgroud-size:cover(撑满，覆盖)contain（包含，显示全部）
+114、mask:url（“./XXXX”）no-repeat center center /100px 100px 遮罩，可能不兼容，要加浏览器前缀
+115、box-reflect:below  20px linear-gradient(rgba(11,1,1 0.5)) (below 下，above 上，left，right) 倒影
+116、filter：blur（20px） 模糊
+117、width：calc（100% - 100px）右边永远空出100px，四则运算
+118、column-count：4 分栏个数（-width）
+119、column-gap：100px 分栏间距
+120、column-rule：1px red solid 分栏线设计
+121、column-span：all 标题占一行
+122、.XX::selection{ background:red:clor:yellow } 被选中的东西颜色和背景发生改变，比如文字要复制时
+123、display：gird  网格布局
+	gird-template-rows：100px 200px 25% 第一行100px，第二行200px，第三行占25%，一般用（1fr，2fr这种比例单位）
+	gird-template-colums：100px 200px 25% 第一列100px，第二列200px，第三列占25%（同样用fr单位）
+	gird-template-rows：repeat（3,1fr） 3行，一行占1fr，列同理，简化写法
+	justify-item：（start，center，end）网格内容水平位置
+	align-item：（start，center，end）网格内容垂直位置（复合写法：place-items：end end）
+	place-content：space-between space-between 针对元素空间进行布局
+124、grid-template-areas：
+	“a1 a1 a1”
+	“a2 a2 a3”		网格区域划分，同名合成一个区域
+	“a2 a2 a3”
+	.XX li:nth-child(1){ gird-area:a1 }
+	.XX li:nth-child(2){ gird-area:a2 }
+	.XX li:nth-child(3){ gird-area:a3 }
+125、grid-column-gap：10px 网格列间距为10px
+     gird-row-gap：20px 网格行间距为20px（复合写法：gird-gap：20px 10px）
+
+126、user-scalable = no 不允许用户缩放页面 
+127、响应式布局：@media all and(min-width:500px) and (max-width:1080px){
+			#box{ background:blue; }	
+				}
+	and(orientation: portrait)竖屏  (all前面加not意思是小于500px的意思)
+	and（orientation: landscape）
+128、外部引入响应式布局：<link rel="stylesheet" href="XXX.css" media=" all and (min-width: 500px) ">
+129、shape-outside: margin-box  不规则文字环绕，比如圆，配合float使用
+130、clip-path:polygon(0 0,0 100px,100px 100px);将正方形剪切成三角形，用来绘制一些不规则图形，如三角形，星星等
+131、自定义滚动条
+    html::-webkit-scrollbar{
+        /* 控制竖的滚动条 */
+        width: 10px;
+        /* 控制横的滚动条
+            height:10px;
+        */
+    }
+    html::-webkit-scrollbar-thumb{//滚动条样式
+        background: #f90;
+        border-radius: 15px;
+    }
+    html::-webkit-scrollbar-track{//滚动条背景样式
+        background-color: #dedede;
+        box-shadow: 0 0 5px 1px gray inset;
+    }
