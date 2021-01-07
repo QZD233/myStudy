@@ -1,0 +1,234 @@
+#profile-app {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+#profile-app .profile-main {
+  display: flex;
+  flex-direction: column;
+  width: 632px;
+  margin-right: 8px;
+}
+
+#profile-app .profile-main .profile-intro {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+  background: white;
+}
+#profile-app .profile-main .profile-intro .avatar-wrapper {
+  margin: 10px 0px 0px 10px;
+}
+#profile-app .profile-main .profile-intro .intro-wrapper {
+  flex-grow: 1;
+  padding: 10px 10px 10px 20px;
+}
+#profile-app .profile-main .profile-intro .intro-wrapper .intro-name {
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 30px;
+}
+#profile-app .profile-main .profile-intro .intro-wrapper .intro-title {
+  margin-top: 15px;
+  line-height: 28px;
+  font-size: 14px;
+  color: #66696a;
+}
+#profile-app .profile-main .profile-intro .intro-wrapper .intro-job {
+  margin: 4px 0;
+  font-size: 16px;
+  font-weight: bolder;
+  color: #999;
+  white-space: nowrap;
+}
+#profile-app .profile-main .profile-intro .intro-wrapper .intro-edu {
+  font-size: 16px;
+  font-weight: bolder;
+  color: #999;
+  white-space: nowrap;
+}
+#profile-app .profile-main .profile-intro .intro-form {
+  width: 100%;
+  padding: 10px;
+  background: #f7f7f7;
+}
+#profile-app .profile-main .profile-intro .intro-form h3 {
+  font-size: 14px;
+  font-weight: normal;
+  color: #bbb;
+}
+#profile-app .profile-main .profile-intro .intro-form .el-row {
+  margin-bottom: 8px;
+}
+#profile-app .profile-main .profile-intro .intro-form .el-input {
+  width: 170px;
+}
+#profile-app .profile-main .profile-intro .intro-form .form-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+#profile-app .profile-main .profile-intro .intro-form .form-label label {
+  padding: 11px 12px 11px 0;
+  color: #48516a;
+  font-size: 14px;
+  font-weight: 700;
+}
+#profile-app .profile-main .profile-intro .intro-collapse {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  border-top: 1px dashed #ccc;
+  background: #f0f0f0;
+}
+#profile-app .profile-main .profile-intro .intro-collapse button {
+  padding: 4px 8px;
+  border: 1px solid #bfc7d9;
+  border-radius: 0px;
+  color: #fff;
+  background: #4878b9;
+  outline: none;
+  cursor: pointer;
+}
+
+#profile-app .profile-main .profile-info h3 {
+  padding-bottom: 8px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 16px;
+  color: #696c6f;
+  font-weight: bold;
+}
+#profile-app .profile-main .profile-info .recommended-section-icon {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+}
+#profile-app .profile-main .profile-info .info-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#profile-app .profile-main .profile-info .icon-bg-green {
+  background-color: #2ecc71;
+}
+#profile-app .profile-main .profile-info .icon-bg-purple {
+  background-color: #9b59b6;
+}
+#profile-app .profile-main .profile-info .icon-bg-red {
+  background-color: #e74c3c;
+}
+#profile-app .profile-main .profile-info .icon-bg-yellow {
+  background-color: #d35400;
+}
+#profile-app .profile-main .profile-info .info-item {
+  width: 49%;
+  margin-bottom: 2%;
+  box-sizing: border-box;
+  background-color: white;
+}
+#profile-app .profile-main .profile-info .info-item-main {
+  display: flex;
+  padding: 15px;
+}
+#profile-app .profile-main .profile-info .info-item-text {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+#profile-app .profile-main .profile-info .info-item-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  padding-bottom: 5px;
+}
+#profile-app .profile-main .profile-info .info-item-subtitle {
+  font-size: 13px;
+  line-height: 17px;
+  color: #96999c;
+  font-weight: normal;
+  overflow: hidden;
+}
+#profile-app .profile-main .info-item-link {
+  height: 40px;
+  background-color: #f1f3f5;
+  text-align: center;
+  cursor: pointer;
+}
+#profile-app .profile-main .info-item-link:hover a {
+  color: #1a56a8;
+}
+#profile-app .profile-main .info-item-link a {
+  height: 100%;
+  line-height: 40px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #696c6f;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+}
+#profile-app .profile-main .profile-title {
+  font-size: 26px;
+  color: #afb2b5;
+  padding: 20px;
+}
+#profile-app .profile-main .profile-resume {
+  background-color: white;
+  margin-bottom: 16px;
+}
+#profile-app .profile-main .profile-resume .resume-content {
+  padding: 5px 20px;
+  font-size: 16px;
+  line-height: 17px;
+  color: #96999c;
+  font-weight: normal;
+  overflow: hidden;
+}
+#profile-app .profile-main .profile-degree {
+  background-color: white;
+  margin-bottom: 16px;
+}
+#profile-app .profile-main .profile-degree .degree-info {
+  padding: 10px 20px;
+  border-top: 1px solid #ecf0f1;
+  color: #34495e;
+}
+#profile-app .profile-main .profile-experience {
+  background-color: white;
+  margin-bottom: 16px;
+}
+#profile-app .profile-main .profile-experience .experience-info {
+  padding: 10px 20px;
+  border-top: 1px solid #ecf0f1;
+  color: #34495e;
+}
+#profile-app .profile-main .profile-certificate {
+  background-color: white;
+  margin-bottom: 16px;
+}
+#profile-app .profile-aside .profile-percentage {
+  display: flex;
+  flex-direction: column;
+  width: 308px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+#profile-app .profile-aside .profile-percentage p {
+  padding-left: 8px;
+  border-left: 5px solid blue;
+  font-size: 16px;
+  font-weight: 700;
+}
+#profile-app .profile-aside .profile-percentage .percentage-wrapper {
+  align-self: center;
+  width: 126px;
+  margin-top: 2px;
+}

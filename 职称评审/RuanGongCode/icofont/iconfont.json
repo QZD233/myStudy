@@ -1,0 +1,72 @@
+{
+  "id": "2281073",
+  "name": "职称评审",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "9670300",
+      "name": "编辑",
+      "font_class": "bianji",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "14787724",
+      "name": "删除",
+      "font_class": "shanchu",
+      "unicode": "e841",
+      "unicode_decimal": 59457
+    },
+    {
+      "icon_id": "8802648",
+      "name": "对",
+      "font_class": "dui",
+      "unicode": "e64d",
+      "unicode_decimal": 58957
+    },
+    {
+      "icon_id": "14918849",
+      "name": "重点",
+      "font_class": "ziyuan1",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "557021",
+      "name": "设置",
+      "font_class": "shezhi",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "637454",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e695",
+      "unicode_decimal": 59029
+    },
+    {
+      "icon_id": "2593666",
+      "name": "字体",
+      "font_class": "ziti",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "3092322",
+      "name": "退出",
+      "font_class": "tuichu",
+      "unicode": "e792",
+      "unicode_decimal": 59282
+    },
+    {
+      "icon_id": "5809171",
+      "name": "放大",
+      "font_class": "fangda",
+      "unicode": "e685",
+      "unicode_decimal": 59013
+    }
+  ]
+}

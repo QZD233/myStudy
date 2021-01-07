@@ -1,0 +1,1570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>广西专业技术人员服务平台231</title>
+    <link rel="stylesheet" href="./icofont/iconfont.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/profile.css">
+    <link rel="stylesheet" href="./css/main2.css">
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css"/>
+    <!-- Profile CSS -->
+    <link rel="stylesheet" href="./css/profile.css" />
+</head>
+<body>
+    <header class="header">
+        <img src="./img/index/logo_zc.png" alt="" class="logo_zc">
+        <ul class="header_right r">
+            <li class="l">
+                <img src="./img/index/duanxin.png" alt="" class="duanxin">
+            </li>
+            <li class="l">
+                <span class="iconfont icon-fangda" title="显示全屏"></span>
+            </li>
+            <li class="l">
+                <span class="iconfont icon-ziti" title="字体设置"></span>
+            </li>
+            <li class="l">
+                <span class="iconfont icon-weixin" title="消息中心"></span>
+            </li>
+            <li class="l">
+                <span class="iconfont icon-shezhi" title="个人中心"></span>
+            </li>
+            <li class="l">
+                <span class="iconfont icon-tuichu" title="退出系统"></span>
+            </li>
+        </ul>
+       
+        <ul class="shouye">
+            <li class="l"> 
+                <a href="">首页</a>
+            </li>
+            <li class="l">
+                <a href="./profile.html">个人资料</a>
+            </li>
+            <li class="l">
+                <a href="">证书管理</a>
+            </li>
+            <li class="l">
+                <a href="">职称评审</a>
+            </li>
+            <li class="l">
+                <a href="">报表下载</a>
+            </li>
+            <li class="l">
+                <a href="">费用管理</a>
+            </li>
+            <li class="l">
+                <a href="">
+                    帮助中心
+                    <img src="./img/index/bullet-question-w-r.png" alt="" style="width: 20px;height: 20px;">
+                </a>
+                
+            </li>
+            <li class="l">
+                <a href="">意见建议</a>
+            </li>
+        </ul>
+    </header>
+    <main id="main">
+        <section class="main">
+            <ul class="nav l">
+                <li id="main0Li">
+                    <span class="iconfont icon-ziyuan1"></span>
+                     个人承诺
+                     <span class="iconfont icon-dui"></span>     
+                </li>
+                <li id="main1Li">
+                    <span class="iconfont icon-ziyuan1"></span>
+                     1.基本信息
+                     <span class="iconfont icon-dui"></span>     
+                </li>
+                <li id="main2Li" >
+                    <span class="iconfont icon-ziyuan1"></span>
+                     2.学历情况
+                     <span class="iconfont icon-dui"></span>     
+                </li>
+                <li id="main3Li" @click="mainExperience();">
+                    <span class="iconfont icon-ziyuan1"></span>
+                     3.主要经历
+                     <span class="iconfont icon-dui"></span>     
+                </li>
+                <li id="main4Li" @click="talentIntroduction();">
+                    <span class="iconfont icon-ziyuan1" style="display: none;"></span>
+                     4.人才引进相关材料
+                     <span class="iconfont icon-dui"></span>     
+                </li>
+                <li id="main5Li" @click="paperWorks();">
+                    <span class="iconfont icon-ziyuan1" style="display: none;"></span>
+                     5.论文、著作
+                     <span class="iconfont icon-dui"></span>     
+                </li>
+                <li id="main6Li" @click="achievements();">
+                    <span class="iconfont icon-ziyuan1" style="display: none;"></span>
+                     6.业绩成果
+                     <span class="iconfont icon-dui"></span>     
+                </li>
+                <li id="main7Li" @click="performanceAwards();">
+                    <span class="iconfont icon-ziyuan1" style="display: none;"></span>
+                     7.业绩奖项
+                     <span class="iconfont icon-dui"></span>     
+                </li>
+                <li id="main8Li">
+                    <span class="iconfont icon-ziyuan1" style="display: none;"></span>
+                     8.业绩专利
+                     <span class="iconfont icon-dui"></span>     
+                </li>
+                <li id="main9Li">
+                    <span class="iconfont icon-ziyuan1" style="display: none;"></span>
+                     9.从业或执业（职业）资格
+                     <span class="iconfont icon-dui"></span>     
+                </li>
+                <li id="main10Li">
+                    <span class="iconfont icon-ziyuan1" style="display: none;"></span>
+                     10.国（镜）外工作或研究材料
+                     <span class="iconfont icon-dui"></span>     
+                </li>
+                <li id="main11Li">
+                    <span class="iconfont icon-ziyuan1"></span>
+                     11.工作总结
+                     <span class="iconfont icon-dui"></span>     
+                </li>
+                <li id="main12Li">
+                    <span class="iconfont icon-ziyuan1" style="display: none;"></span>
+                     12.其他材料
+                     <span class="iconfont icon-dui"></span>     
+                </li>
+                <li id="main13Li">
+                    <span class="iconfont icon-ziyuan1" style="display: none;"></span>
+                     审核报送
+                     <span class="iconfont icon-dui"></span>     
+                </li>
+            </ul>
+            <div class="main_right l">
+                <div class="main0"id="main0" >
+                    <div class="main01">
+                        <span>职称评审</span>
+                        <a href="">返回</a>
+                    </div>
+                    <div class="main02">
+                        <h2 style="text-align: center;">职称申报个人承诺书</h2>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 本人承诺对所递交的申报材料完整性和真实性负责。如因申报材料缺失不全造
+    成的后果由本人自行承担；如申报过程中被发现申报材料弄虚作假，同意按照自治区有关文件及评审条件规定，自申
+    报当年起，5年内不得申报。累计造假两次的，终身不得申报。
+<br>
+                                        <span style="float: right;">本人已承诺：Jianghao</span><br>
+                                        <span style="float: right;">承诺日期：2020-11-15</span>            
+                    </div>
+                    <input type="checkbox" style="width: 18px;height: 18px; margin: 0 0 0 400px;">
+                    <a href="" class="main03">我已阅读并同意以上条款</a>
+                    <a href="" class="main04">开始填写申报信息</a>
+                </div>
+                <div class="main1" id="main1" style="display: none;">
+                    <div class="main01">
+                        <span>职称评审</span>
+                        <a href="">返回</a>
+                    </div>
+                    <div class="main11">
+                        <span class="iconfont icon-ziyuan1"></span>
+                        <span>单位（请在下拉列表中选择，如无法搜索到所需的单位信息，请先进行注册）</span>
+                    </div>
+                    <input type="search" placeholder="请输入单位名称关键字，例如“广西”，并从弹出的下拉列表中选择。" class="main12">
+                    <section class="main13">
+                        <span class="main13_span">
+                            <span class="iconfont icon-ziyuan1"></span>
+                            <span>单位级别</span>
+                        </span>
+                        <span class="main13_span">
+                            <span class="iconfont icon-ziyuan1"></span>
+                            <span>个人身份性质</span>
+                        </span>
+                        <span class="main13_span">
+                            <span class="iconfont icon-ziyuan1"></span>
+                            <span>评审年度</span>
+                        </span>
+                        <span class="main13_span">
+                            <span class="iconfont icon-ziyuan1"></span>
+                            <span>姓名（现状）</span>
+                        </span>
+                        <span class="main13_span">
+                            <span>姓名（曾用名）</span>
+                        </span>
+                        <br>
+                        <!-- 单位级别 -->
+                        <input type="text">
+                        <!-- 个人身份性质 -->
+                        <select name="" id="" class="main13_sel1">
+                            <option value="事业单位人员" selected>事业单位人员</option>
+                            <option value="机关、事业单位非在编人员">机关、事业单位非在编人员</option>
+                            <option value="自由职业者">自由职业者</option>
+                        </select>
+                        <!-- 评审年度 -->
+                        <input type="text">
+                        <!-- 姓名 -->
+                        <input type="text">
+                        <!-- 曾用名 -->
+                        <input type="text">
+                        <br>
+                        <span class="main13_span2" style="margin: 0 0 5px 10px;">
+                            <span class="iconfont icon-ziyuan1"></span>
+                            <span>性别</span>
+                        </span>
+                        <span class="main13_span2">
+                            <span class="iconfont icon-ziyuan1"></span>
+                            <span>民族</span>
+                        </span>
+                        <span class="main13_span2">
+                            <span class="iconfont icon-ziyuan1"></span>
+                            <span>证件号码</span>
+                        </span>
+                        <span class="main13_span2">
+                            <span class="iconfont icon-ziyuan1"></span>
+                            <span>出生年月</span>
+                        </span>
+                        <span class="main13_span2">
+                            <span>填表时间</span>
+                        </span>
+                        <br>
+                         <!-- 性别 -->
+                         <select name="" id="" class="main13_sel1" style="margin: 0 0 0 15px;">
+                             <option value="男">男</option>
+                             <option value="女">女</option>
+                         </select>
+                         <!-- 民族 -->
+                         <select name="" id="" class="main13_sel1">
+                             <option value="回族" selected>回族</option>
+                             <option value="蒙古族">蒙古族</option>
+                             <option value="藏族">藏族</option>
+                             <option value="维吾尔族">维吾尔族</option>
+                             <option value="彝族">彝族</option>
+                             <option value="布依族">布依族</option>
+                             <option value="朝鲜族">朝鲜族</option>
+                             <option value="满族">满族</option>
+                             <option value="侗族">侗族</option>
+                             <option value="瑶族">瑶族</option>
+                             <option value="白族">白族</option>
+                             <option value="土家族">土家族</option>
+                             <option value="哈尼族">哈尼族</option>
+                             <option value="汉族">汉族</option>
+                             <option value="壮族">壮族</option>
+                             <option value="苗族">苗族</option>
+                             <option value="外国血统中国籍人士">外国血统中国籍人士</option>
+                             <option value="其它">其它</option>
+                         </select>
+                         <!-- 证件号码 -->
+                         <input type="text">
+                         <!-- 出生年月 -->
+                         <input type="date">
+                         <!-- 填表时间 -->
+                         <input type="date">
+                         <br>
+                         <span class="main13_span2" style="margin: 0 0 5px 10px;">
+                            <span class="iconfont icon-ziyuan1"></span>
+                            <span>参加工作时间</span>
+                        </span>
+                        <span class="main13_span2">
+                            <span class="iconfont icon-ziyuan1"></span>
+                            <span>专业技术工作年限</span>
+                        </span>
+                        <span class="main13_span2">
+                            <span class="iconfont icon-ziyuan1"></span>
+                            <span>参加评审会</span>
+                        </span>
+                        <span class="main13_span2">
+                            <span class="iconfont icon-ziyuan1"></span>
+                            <span>拟评职称系列</span>
+                        </span>
+                        <span class="main13_span2">
+                            <span>拟评专业</span>
+                        </span>
+                        <br>
+                         <!-- 参加工作时间 -->
+                        <input type="date">
+                         <!-- 专业技术工作年限 -->
+                        <input type="number" style="margin: 0 0 5px 30px;">
+                         <!-- 参加评审会 -->
+                        <input type="text" style="margin: 0 0 5px 30px;">
+                         <!-- 拟评职称系列 -->
+                        <input type="text" style="margin: 0 0 5px 15px;">
+                         <!-- 拟评专业 -->
+                        <select name="" id="" class="main13_sel2">
+                            <option value="">22</option>
+                            <option value="">33</option>
+                        </select>
+                        <br>
+                        <span class="main13_span2" style="margin: 0 0 5px 10px;">
+                            <span class="iconfont icon-ziyuan1"></span>
+                            <span>拟评专业技术资格</span>
+                        </span>
+                        <span class="main13_span2">
+                            <span class="iconfont icon-ziyuan1"></span>
+                            <span>行政职务</span>
+                        </span>
+                        <span class="main13_span2">
+                            <span class="iconfont icon-ziyuan1"></span>
+                            <span>行政职务任命时间</span>
+                        </span>
+                        <span class="main13_span2">
+                            <span class="iconfont icon-ziyuan1"></span>
+                            <span>行政职务说明</span>
+                        </span>
+                        <br>
+                         <!-- 拟评专业技术资格 -->
+                         <select name="" id="" class="main13_sel1" style="margin: 0 0 0 15px;">
+                             <option value="男">男</option>
+                             <option value="女">女</option>
+                         </select>
+                         <!-- 行政职务 -->
+                         <select name="" id="" class="main13_sel1">
+                             <option value="回族" selected>回族</option>
+                             <option value="蒙古族">蒙古族</option>
+                         </select>
+                         <!-- 行政职务任命时间 -->
+                         <input type="date">
+                         <!-- 行政职务说明 -->
+                         <input type="text">
+                         <br>
+                         <span class="main13_span2" style="margin: 5px 0px 5px 10px;">
+                            <span class="iconfont icon-ziyuan1"></span>
+                            <span>联系电话</span>
+                        </span>
+                        <span class="main13_span2">
+                            <span class="iconfont icon-ziyuan1"></span>
+                            <span>电子邮箱</span>
+                        </span>
+                        <br>
+                        <input type="phone"> 
+                        <input type="email" style="margin: 5px 0 0 30px;">
+                        <br>
+                        <span class="main13_span2" style="margin: 5px 0px 5px 10px;">
+                            <span class="iconfont icon-ziyuan1"></span>
+                            <span>档案所在地机构名称</span>
+                        </span>
+                        <br>
+                        <select name="" id="" style="display: inline-block;width: 96%; margin: 5px 0 5px 10px;
+                                                     height: 36px; border-radius: 5px;
+                                                     border: 1px rgb(180, 180, 180) solid;">
+                            <option value="">
+                                南宁市人才服务管理办公室
+                            </option>
+                        </select>
+                        <br>
+                        <div>
+                            <input type="checkbox" style="width: 15px; height: 15px;margin: 20px 0 20px 10px;">
+                            <span style="font-weight: bold;">其他档案机构</span>
+                        </div>
+                        <br>
+                        <span class="main13_span2">
+                            <span>政治面貌</span>
+                        </span>
+                        <br>
+                        <select name="" id="" style="display: inline-block;width: 96%; margin: 5px 0 5px 10px;
+                                                    height: 36px; border-radius: 5px;
+                                                    border: 1px rgb(180, 180, 180) solid;">
+                            <option value="">中共党员</option>
+                            <option value="">预备党员</option>
+                            <option value="">群众</option>
+                            <option value="">其它</option>
+                        </select>
+                       <br>
+                       <span class="main13_span2">
+                            <span>籍贯</span>
+                       </span>
+                       <br>
+                       <input type="text" style="display: inline-block;width: 96%; margin: 5px 0 5px 10px;
+                       height: 36px; border-radius: 5px;
+                       border: 1px rgb(180, 180, 180) solid;">
+                       <br>
+                       <span class="main13_span2">
+                        <span>联系地址</span>
+                       </span>
+                       <br>
+                       <input type="text" style="display: inline-block;width: 96%; margin: 5px 0 5px 10px;
+                                                 height: 36px; border-radius: 5px;
+                                                 border: 1px rgb(180, 180, 180) solid;">
+                        <img src="./img/index/main1_1.PNG" alt="" style="display: block; width: 98%;">
+                        <div class="main14 l">
+                            <span>
+                                <span class="iconfont icon-ziyuan1"></span>
+                                <span>身份证正面图片（限一张）</span>
+                            </span>
+                            <input type="file">
+                        </div>
+                        <div class="main14 l">
+                            <span>
+                                <span class="iconfont icon-ziyuan1"></span>
+                                <span>身份证反面图片（限一张）</span>
+                            </span>
+                            <input type="file">
+                        </div>
+                        <div class="main14 l">
+                            <span>
+                                <span class="iconfont icon-ziyuan1"></span>
+                                <span>近期免冠2寸照片（限一张）</span>
+                                <a href="">示例图</a>
+                            </span>
+                            <input type="file">
+                        </div>
+                    </section>
+                </div>
+                <div class="main2" id="main2" style="display: none;">
+                    <div class="main01">
+                        <span>职称评审</span>
+                        <a href="">返回</a>
+                    </div>
+                    <section class="main21">
+                        <section class="main22">
+                            <span style="font-weight: bold; color: rgb(31, 103, 185);">
+                                学历情况</span>
+                                <!-- <a href="" class="xinzeng r">新 增</a> -->
+                                <div id="main2_app">
+                                    <!-- Table -->                                   
+                                    <!-- Form -->
+                                    <el-button type="text" @click="dialogFormVisible = true" style="color: white;margin: 0 0 0px 20px;">新增</el-button>
+                                    
+                                    <el-dialog title="学历情况" :visible.sync="dialogFormVisible">
+                                      <el-form :model="form">
+                                        <el-form-item label="毕业时间" :label-width="formLabelWidth">
+                                          <el-date-picker
+                                          v-model="value1"
+                                          type="date"
+                                          placeholder="选择日期">
+                                        </el-date-picker>
+                                        </el-form-item>
+                                        <el-form-item label="学历项目" :label-width="formLabelWidth">
+                                            <el-select v-model="value1" placeholder="请选择">
+                                                <el-option
+                                                  v-for="item in options2"
+                                                  :key="item.value"
+                                                  :label="item.label"
+                                                  :value="item.value">
+                                                </el-option>
+                                              </el-select>
+                                        </el-form-item>
+                                        <el-form-item label="学历" :label-width="formLabelWidth">
+                                        <el-select v-model="value2" placeholder="请选择">
+                                            <el-option
+                                                v-for="item in options3"
+                                                :key="item.value"
+                                                :label="item.label"
+                                                :value="item.value">
+                                            </el-option>
+                                            </el-select>
+                                        </el-form-item>
+                                        <el-form-item label="毕业院校" :label-width="formLabelWidth">
+                                            <el-input v-model="input1" placeholder="请输入内容"></el-input>
+                                        </el-form-item>
+                                        <el-form-item label="专业" :label-width="formLabelWidth">
+                                            <el-input v-model="input2" placeholder="请输入内容"></el-input>
+                                        </el-form-item>
+                                        <el-form-item label="学位" :label-width="formLabelWidth">
+                                            <el-input v-model="input3" placeholder="请输入内容"></el-input>
+                                        </el-form-item>  
+                                      </el-form>
+                                      <div slot="footer" class="dialog-footer">
+                                        <el-button @click="dialogFormVisible = false">取 消</el-button>
+                                        <el-button type="primary" @click="dialogFormVisible = false">确 定</el-button>
+                                      </div>
+                                    </el-dialog>
+                                    </div>
+                        </section>
+                        <img src="./img/index/main2_1.PNG" alt="">
+                        <section class="main23" id="main23">
+                            <form action="">
+                                <table border="1px" cellspacing="0">
+                                    <tr  height="40px">
+                                        <th>毕业时间</th>
+                                        <th>学历项目</th>
+                                        <th>学历</th>
+                                        <th>毕业学校</th>
+                                        <th>专业</th>
+                                        <th>学位</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    <tr  height="40px" >
+                                        <td>{{graduationtime}}</td>
+                                        <td>{{educationproject}}</td>
+                                        <td>{{education}}</td>
+                                        <td>{{graduationschool}}</td>
+                                        <td>{{major}}</td>
+                                        <td>{{degree}}</td>
+                                        <td>
+                                            <span class="iconfont icon-bianji" style="color: cornflowerblue;">
+                                                <a ></a>
+                                            </span>
+                                            <span class="iconfont icon-shanchu" style="color: red;">
+                                                <a href=""></a>
+                                            </span>
+                                        </td>
+                                    </tr>                                   
+                                </table>
+                            </form>
+                        </section>
+                    </section>
+                    <a href="" class="main2_save r">保 存</a>
+                </div>
+                <div class="main3" id="main3" style="display: none;">
+                    <div class="main01">
+                        <span>职称评审</span>
+                        <a href="">返回</a>
+                    </div>
+                    <section class="main31">
+                    <section class="main32">
+                        <span style="font-weight: bold; color: rgb(31, 103, 185);">
+                            主要经历</span>
+                            <!-- <a href="" class="xinzeng r">新 增</a> -->
+                            <div id="main3_app">
+                                <!-- Table -->                                   
+                                <!-- Form -->
+                                <el-button type="text" @click="dialogFormVisible = true" style="color: white;margin: 0 0 0px 20px;">新增</el-button>
+                                
+                                <el-dialog title="主要经历" :visible.sync="dialogFormVisible">
+                                  <el-form :model="form">
+                                    <el-form-item label="毕业时间" :label-width="formLabelWidth">
+                                      <el-date-picker
+                                      v-model="value1"
+                                      type="date"
+                                      placeholder="选择日期">
+                                    </el-date-picker>
+                                   </el-form-item>
+                                    <el-form-item label="截止时间" :label-width="formLabelWidth">
+                                      <el-date-picker
+                                      v-model="value2"
+                                      type="date"
+                                      placeholder="选择日期">
+                                    </el-date-picker>
+                                        </el-form-item>
+                                        <el-form-item label="工作单位" :label-width="formLabelWidth">
+                                        <el-input v-model="input1" placeholder="请输入内容"></el-input>
+                                        </el-form-item>
+                                        <el-form-item label="技术工作" :label-width="formLabelWidth">
+                                        <el-input v-model="input2" placeholder="请输入内容"></el-input>
+                                        </el-form-item>
+                                        <el-form-item label="任何职" :label-width="formLabelWidth">
+                                        <el-input v-model="input2" placeholder="请输入内容"></el-input>
+                                        </el-form-item>
+                                        <el-form-item label="证明人" :label-width="formLabelWidth">
+                                        <el-input v-model="input3" placeholder="请输入内容"></el-input>
+                                        </el-form-item>
+                                  </el-form>
+                                  
+                                  <div slot="footer" class="dialog-footer">
+                                    <el-button @click="dialogFormVisible = false">取 消</el-button>
+                                    <el-button type="primary" @click="dialogFormVisible = false">确 定</el-button>
+                                  </div>
+                                </el-dialog>
+                                </div>
+                    </section>
+                    <img src="./img/index/main3_1.PNG" alt="">
+                    <section class="main33" id="main33">
+                        <form action="">
+                            <table border="1px" cellspacing="0">
+                                <tr  height="40px">
+                                    <th>开始时间</th>
+                                    <th>截止时间</th>
+                                    <th>工作单位（学校）</th>
+                                    <th>从事何种专业技术工作（学习）</th>
+                                    <th>任何职</th>
+                                    <th>证明人</th>
+                                    <th>操作</th>
+                                </tr>
+                                <tr  height="40px">
+                                    <td>{{starttime}}</td>
+                                    <td>{{endtime}}</td>
+                                    <td>{{workunit}}</td>
+                                    <td>{{whereschoolwork}}</td>
+                                    <td>{{post}}</td>
+                                    <td>{{certifyman}}</td>
+                                    <td>
+                                        <span class="iconfont icon-bianji" style="color: cornflowerblue;">
+                                            <a href=""></a>
+                                        </span>
+                                        <span class="iconfont icon-shanchu" style="color: red;">
+                                            <a href=""></a>
+                                        </span>
+                                    </td>
+                                </tr>   
+                            </table>
+                        </form>
+                    </section>
+                    <a href="" class="main3_save r">保 存</a>
+                </div>
+                <div class="main4" id="main4" style="display: none;">
+                    <div class="main01">
+                        <span>职称评审</span>
+                        <a href="">返回</a>
+                    </div>
+                    <section class="main41">
+                    <section class="main42">
+                        <span style="font-weight: bold; color: rgb(31, 103, 185);">
+                            人才引进相关材料</span>
+                            <!-- <a href="" class="xinzeng r">新 增</a> -->
+                            <div id="main4_app">
+                                <!-- Table -->                                   
+                                <!-- Form -->
+                                <el-button type="text" @click="dialogFormVisible = true" style="color: white;margin: 0 0 0px 20px;">新增</el-button>
+                                
+                                <el-dialog title="人才引进相关材料" :visible.sync="dialogFormVisible">
+                                  <el-form :model="form">
+                                    <el-form-item label="开始时间" :label-width="formLabelWidth">
+                                      <el-date-picker
+                                      v-model="value1"
+                                      type="date"
+                                      placeholder="选择日期">
+                                    </el-date-picker>
+                                    </el-form-item>
+                                    <el-form-item label="证明材料" :label-width="formLabelWidth">
+                                        <el-upload
+                                        class="upload-demo"
+                                        action="https://jsonplaceholder.typicode.com/posts/"
+                                        :on-preview="handlePreview"
+                                        :on-remove="handleRemove"
+                                        :before-remove="beforeRemove"
+                                        multiple
+                                        :limit="3"
+                                        :on-exceed="handleExceed"
+                                        :file-list="fileList">
+                                        <el-button size="small" type="primary">点击上传</el-button>
+                                        </el-upload>
+                                   </el-form-item>     
+                                  </el-form>
+                                  
+                                  <div slot="footer" class="dialog-footer">
+                                    <el-button @click="dialogFormVisible = false">取 消</el-button>
+                                    <el-button type="primary" @click="dialogFormVisible = false">确 定</el-button>
+                                  </div>
+                                </el-dialog>
+                                </div>
+                    </section>
+                    <img src="./img/index/main4_1.PNG" alt="">
+                    <section class="main43" id="main43">
+                        <form action="">
+                            <table border="1px" cellspacing="0">
+                                <tr  height="40px">
+                                    <th style="width: 90%;">材料名称</th>
+                                    <th>操作</th>
+                                </tr>
+                                <tr  height="40px">
+                                    <td style="width: 90%;">{{materialsname}}</td>
+                                    <td>
+                                        <span class="iconfont icon-bianji" style="color: cornflowerblue;">
+                                            <a href=""></a>
+                                        </span>
+                                        <span class="iconfont icon-shanchu" style="color: red;">
+                                            <a href=""></a>
+                                        </span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </section>
+                    <a href="" class="main4_save r">保 存</a>
+                </div>
+                <div class="main5" id="main5" style="display: none;">
+                    <div class="main01">
+                        <span>职称评审</span>
+                        <a href="">返回</a>
+                    </div>
+                    <section class="main51">
+                        <section class="main52">
+                            <span style="font-weight: bold; color: rgb(31, 103, 185);">
+                                论文、著作</span>
+                                <!-- <a href="" class="xinzeng r">新 增</a> -->
+                                <div id="main5_app">
+                                    <!-- Table -->                                   
+                                    <!-- Form -->
+                                    <el-button type="text" @click="dialogFormVisible = true" style="color: white;margin: 0 0 0px 20px;">新增</el-button>
+                                   
+                                    <el-dialog title="论文、著作" :visible.sync="dialogFormVisible">
+                                      <el-form :model="form">
+                                        <el-form-item label="序号" :label-width="formLabelWidth">
+                                            <el-input v-model="input1" placeholder="请输入内容"></el-input>
+                                        </el-form-item>
+                                        <el-form-item label="发表时间" :label-width="formLabelWidth">
+                                          <el-date-picker
+                                          v-model="value1"
+                                          type="date"
+                                          placeholder="选择日期">
+                                        </el-date-picker>
+                                       </el-form-item>
+                                       <el-form-item label="论文类别" :label-width="formLabelWidth">
+                                        <el-input v-model="input2" placeholder="请输入内容"></el-input>
+                                       </el-form-item>
+                                       <el-form-item label="论文著作名称" :label-width="formLabelWidth">
+                                        <el-input v-model="input3" placeholder="请输入内容"></el-input>
+                                       </el-form-item>
+                                       <el-form-item label="刊物名称、刊号" :label-width="formLabelWidth">
+                                        <el-input v-model="input4" placeholder="请输入内容"></el-input>
+                                       </el-form-item>
+                                       <el-form-item label="角色" :label-width="formLabelWidth">
+                                        <el-input v-model="input5" placeholder="请输入内容"></el-input>
+                                       </el-form-item>
+                                       <el-form-item label="是否代表作" :label-width="formLabelWidth">
+                                        <el-select v-model="value3" placeholder="请选择">
+                                            <el-option
+                                              v-for="item in options"
+                                              :key="item.value"
+                                              :label="item.label"
+                                              :value="item.value">
+                                            </el-option>
+                                          </el-select>
+                                       </el-form-item>
+                                      </el-form>
+                                      
+                                      <div slot="footer" class="dialog-footer">
+                                        <el-button @click="dialogFormVisible = false">取 消</el-button>
+                                        <el-button type="primary" @click="dialogFormVisible = false">确 定</el-button>
+                                      </div>
+                                    </el-dialog>
+                                    </div>
+                        </section>
+                        <img src="./img/index/main5_1.PNG" alt="">
+                        <section class="main53" id="main53">
+                            <form action="">
+                                <table border="1px" cellspacing="0">
+                                    <tr  height="40px">
+                                        <th>序号</th>
+                                        <th>发表时间</th>
+                                        <th>论文类别</th>
+                                        <th>论文著作名称</th>
+                                        <th>登载刊物名称、刊号</th>
+                                        <th>角色</th>
+                                        <th>是否代表作</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    <tr  height="40px">
+                                        <td>1</td>
+                                        <td>{{publishtime}}</td>
+                                        <td>{{paperclasses}}</td>
+                                        <td>{{papername}}</td>
+                                        <td>{{insertperiodical}}</td>
+                                        <td>{{role}}</td>
+                                        <td>{{ifmagnumopus}}</td>
+                                        <td>
+                                            <span class="iconfont icon-bianji" style="color: cornflowerblue;">
+                                                <a href=""></a>
+                                            </span>
+                                            <span class="iconfont icon-shanchu" style="color: red;">
+                                                <a href=""></a>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </section>
+                    </section>
+                    <a href="" class="main5_save r">保 存</a>
+                </div>
+                <div class="main6" id="main6" style="display: none;">
+                    <div class="main01">
+                        <span>职称评审</span>
+                        <a href="">返回</a>
+                    </div>
+                    <section class="main61">
+                        <section class="main62">
+                            <span style="font-weight: bold; color: rgb(31, 103, 185);">
+                                业绩成果</span>
+                                <!-- <a href="" class="xinzeng r">新 增</a> -->
+                                <div id="main6_app">
+                                    <!-- Table -->                                   
+                                    <!-- Form -->
+                                    <el-button type="text" @click="dialogFormVisible = true" style="color: white;margin: 0 0 0px 20px;">新增</el-button>
+                                   
+                                    <el-dialog title="业绩成果" :visible.sync="dialogFormVisible">
+                                      <el-form :model="form">
+                                        
+                                        <el-form-item label="开始时间" :label-width="formLabelWidth">
+                                          <el-date-picker
+                                          v-model="value1"
+                                          type="date"
+                                          placeholder="选择日期">
+                                        </el-date-picker>
+                                        </el-form-item>
+                                        <el-form-item label="截止时间" :label-width="formLabelWidth">
+                                            <el-date-picker
+                                            v-model="value2"
+                                            type="date"
+                                            placeholder="选择日期">
+                                          </el-date-picker>
+                                          </el-form-item>
+                                        <el-form-item label="项目级别" :label-width="formLabelWidth">
+                                            <el-input v-model="input1" placeholder="请输入内容"></el-input>
+                                        </el-form-item>
+                                        <el-form-item label="业绩名称" :label-width="formLabelWidth">
+                                            <el-input v-model="input2" placeholder="请输入内容"></el-input>
+                                        </el-form-item>
+                                        
+                                      </el-form>
+                                      
+                                      <div slot="footer" class="dialog-footer">
+                                        <el-button @click="dialogFormVisible = false">取 消</el-button>
+                                        <el-button type="primary" @click="dialogFormVisible = false">确 定</el-button>
+                                      </div>
+                                    </el-dialog>
+                                    </div>
+                        </section>
+                        <img src="./img/index/main6_1.PNG" alt="">
+                        <section class="main63" id="main63">
+                            <form action="">
+                                <table border="1px" cellspacing="0">
+                                    <tr  height="40px">
+                                        <th>开始时间</th>
+                                        <th>截止时间</th>
+                                        <th>项目级别（规模）</th>
+                                        <th>业绩名称（如项目、专利、标准、课题等）</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    <tr  height="40px">
+                                        <td>{{starttime}}</td>
+                                        <td>{{stoptime}}</td>
+                                        <td>{{projectlevel}}</td>
+                                        <td>{{performancename}}</td>
+                                        <td>
+                                            <span class="iconfont icon-bianji" style="color: cornflowerblue;">
+                                                <a href=""></a>
+                                            </span>
+                                            <span class="iconfont icon-shanchu" style="color: red;">
+                                                <a href=""></a>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </section>
+                    </section>
+                    <a href="" class="main6_save r">保 存</a>
+                </div>
+                <div class="main7" id="main7" style="display: none;">
+                    <div class="main01">
+                        <span>职称评审</span>
+                        <a href="">返回</a>
+                    </div>
+                    <section class="main71">
+                        <section class="main72">
+                            <span style="font-weight: bold; color: rgb(31, 103, 185);">
+                                业绩奖项</span>
+                                <!-- <a href="" class="xinzeng r">新 增</a> -->
+                                <div id="main7_app">
+                                    <!-- Table -->                                   
+                                    <!-- Form -->
+                                    <el-button type="text" @click="dialogFormVisible = true" style="color: white;margin: 0 0 0px 20px;">新增</el-button>
+                                   
+                                    <el-dialog title="业绩奖项" :visible.sync="dialogFormVisible">
+                                      <el-form :model="form">
+                                        <el-form-item label="项目名称" :label-width="formLabelWidth">
+                                            <el-input v-model="input1" placeholder="请输入内容"></el-input>
+                                        </el-form-item>
+                                        <el-form-item label="奖励等级" :label-width="formLabelWidth">
+                                            <el-input v-model="input2" placeholder="请输入内容"></el-input>
+                                        </el-form-item>
+                                        <el-form-item label="授予时间" :label-width="formLabelWidth">
+                                          <el-date-picker
+                                          v-model="value1"
+                                          type="date"
+                                          placeholder="选择日期">
+                                        </el-date-picker>
+                                        </el-form-item>
+                                        <el-form-item label="授予机构" :label-width="formLabelWidth">
+                                            <el-input v-model="input3" placeholder="请输入内容"></el-input>
+                                        </el-form-item>
+                                        
+                                      </el-form>
+                                      
+                                      <div slot="footer" class="dialog-footer">
+                                        <el-button @click="dialogFormVisible = false">取 消</el-button>
+                                        <el-button type="primary" @click="dialogFormVisible = false">确 定</el-button>
+                                      </div>
+                                    </el-dialog>
+                                    </div>
+                        </section>
+                        <img src="./img/index/main7_1.PNG" alt="">
+                        <section class="main73" id="main73">
+                            <form action="">
+                                <table border="1px" cellspacing="0">
+                                    <tr  height="40px">
+                                        <th>项目名称</th>
+                                        <th>奖励等级</th>
+                                        <th>授予时间</th>
+                                        <th>授予机构</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    <tr  height="40px">
+                                        <td>{{projectname}}</td>
+                                        <td>{{awardslevel}}</td>
+                                        <td>{{awardtime}}</td>
+                                        <td>{{awardorganization}}</td>
+                                        <td>
+                                            <span class="iconfont icon-bianji" style="color: cornflowerblue;">
+                                                <a href=""></a>
+                                            </span>
+                                            <span class="iconfont icon-shanchu" style="color: red;">
+                                                <a href=""></a>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </section>
+                    </section>
+                    <a href="" class="main7_save r">保 存</a>
+                </div>
+                <div class="main8" id="main8" style="display:none;">
+                    <div class="main01">
+                        <span>职称评审</span>
+                        <a href="">返回</a>
+                    </div>
+                    <section class="main81">
+                        <section class="main82">
+                            <span style="font-weight: bold; color: rgb(31, 103, 185);">
+                                业绩专利</span>
+                                <!-- <a href="" class="xinzeng r">新 增</a> -->
+                                <div id="main8_app">
+                                    <!-- Table -->                                   
+                                    <!-- Form -->
+                                    <el-button type="text" @click="dialogFormVisible = true" style="color: white;margin: 0 0 0px 20px;">新增</el-button>
+                                   
+                                    <el-dialog title="业绩专利" :visible.sync="dialogFormVisible">
+                                      <el-form :model="form">
+                                        <el-form-item label="专利名称" :label-width="formLabelWidth">
+                                            <el-input v-model="input1" placeholder="请输入内容"></el-input>
+                                        </el-form-item>
+                                        <el-form-item label="专利类型" :label-width="formLabelWidth">
+                                            <el-input v-model="input2" placeholder="请输入内容"></el-input>
+                                        </el-form-item>
+                                        <el-form-item label="取得时间" :label-width="formLabelWidth">
+                                          <el-date-picker
+                                          v-model="value1"
+                                          type="date"
+                                          placeholder="选择日期">
+                                        </el-date-picker>
+                                        </el-form-item>
+                                        
+                                        
+                                      </el-form>
+                                      
+                                      <div slot="footer" class="dialog-footer">
+                                        <el-button @click="dialogFormVisible = false">取 消</el-button>
+                                        <el-button type="primary" @click="dialogFormVisible = false">确 定</el-button>
+                                      </div>
+                                    </el-dialog>
+                                    </div>
+                        </section>
+                        <img src="./img/index/main8_1.PNG" alt="">
+                        <section class="main83" id="main83">
+                            <form action="">
+                                <table border="1px" cellspacing="0">
+                                    <tr  height="40px">
+                                        <th style="width: 60%;">专利名称</th>
+                                        <th>专利类型</th>
+                                        <th>取得时间</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    <tr  height="40px">
+                                        <td>{{patentsname}}</td>
+                                        <td>{{patentstype}}</td>
+                                        <td>{{gettime}}</td>
+                                        <td>
+                                            <span class="iconfont icon-bianji" style="color: cornflowerblue;">
+                                                <a href=""></a>
+                                            </span>
+                                            <span class="iconfont icon-shanchu" style="color: red;">
+                                                <a href=""></a>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </section>
+                    </section>
+                    <a href="" class="main8_save r">保 存</a>
+                </div>
+                <div class="main9" id="main9" style="display: none;">
+                    <div class="main01">
+                        <span>职称评审</span>
+                        <a href="">返回</a>
+                    </div>
+                    <section class="main91">
+                        <section class="main92">
+                            <span style="font-weight: bold; color: rgb(31, 103, 185);">
+                                从业或职（执）业资格</span>
+                                <!-- <a href="" class="xinzeng r">新 增</a> -->
+                                <div id="main9_app">
+                                    <!-- Table -->                                   
+                                    <!-- Form -->
+                                    <el-button type="text" @click="dialogFormVisible = true" style="color: white;margin: 0 0 0px 20px;">新增</el-button>
+                                   
+                                    <el-dialog title="从业或职（执）业资格" :visible.sync="dialogFormVisible">
+                                      <el-form :model="form">
+                                        <el-form-item label="资格名称" :label-width="formLabelWidth">
+                                            <el-input v-model="input1" placeholder="请输入内容"></el-input>
+                                        </el-form-item>
+                                        <el-form-item label="取得时间" :label-width="formLabelWidth">
+                                          <el-date-picker
+                                          v-model="value1"
+                                          type="date"
+                                          placeholder="选择日期">
+                                        </el-date-picker>
+                                        </el-form-item>
+                                        <el-form-item label="批准机关" :label-width="formLabelWidth">
+                                            <el-input v-model="input2" placeholder="请输入内容"></el-input>
+                                        </el-form-item>
+                                        <el-form-item label="专业名称" :label-width="formLabelWidth">
+                                            <el-input v-model="input3" placeholder="请输入内容"></el-input>
+                                        </el-form-item>
+                                        <el-form-item label="证书编号" :label-width="formLabelWidth">
+                                            <el-input v-model="input4" placeholder="请输入内容"></el-input>
+                                        </el-form-item>
+                                      </el-form>
+                                      
+                                      <div slot="footer" class="dialog-footer">
+                                        <el-button @click="dialogFormVisible = false">取 消</el-button>
+                                        <el-button type="primary" @click="dialogFormVisible = false">确 定</el-button>
+                                      </div>
+                                    </el-dialog>
+                                </div>
+                            
+                        </section>
+                        <img src="./img/index/main9_1.PNG" alt="">
+                        <section class="main93" id="main93">
+                            <form action="">
+                                <table border="1px" cellspacing="0">
+                                    <tr  height="40px">
+                                        <th>资格名称</th>
+                                        <th>取得时间</th>
+                                        <th>批准机关</th>
+                                        <th>专业名称</th>
+                                        <th>证书编号</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    <tr  height="40px">
+                                        <td>{{qualificationname}}</td>
+                                        <td>{{gettime}}</td>
+                                        <td>{{ratifyoffice}}</td>
+                                        <td>{{majorname}}</td>
+                                        <td>{{credentialnumber}}</td>
+                                        <td>
+                                            <span class="iconfont icon-bianji" style="color: cornflowerblue;">
+                                                <a href=""></a>
+                                            </span>
+                                            <span class="iconfont icon-shanchu" style="color: red;">
+                                                <a href=""></a>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </section>
+                    </section>
+                    <a href="" class="main9_save r">保 存</a>
+                </div>
+                <div class="main10" id="main10" style="display: none;">
+                    <div class="main01">
+                        <span>职称评审</span>
+                        <a href="">返回</a>
+                    </div>
+                    <section class="main101">
+                        <section class="main102">
+                            <span style="font-weight: bold; color: rgb(31, 103, 185);">
+                                国（镜）外工作或研究材料</span>
+                                <!-- <a href="" class="xinzeng r">新 增</a> -->
+                                <div id="main10_app">
+                                    <!-- Table -->                                   
+                                    <!-- Form -->
+                                    <el-button type="text" @click="dialogFormVisible = true" style="color: white;margin: 0 0 0px 20px;">新增</el-button>
+                                   
+                                    <el-dialog title="从业或职（执）业资格" :visible.sync="dialogFormVisible">
+                                      <el-form :model="form">
+                                        
+                                        <el-form-item label="开始时间" :label-width="formLabelWidth">
+                                          <el-date-picker
+                                          v-model="value1"
+                                          type="date"
+                                          placeholder="选择日期">
+                                        </el-date-picker>
+                                        </el-form-item>
+                                        <el-form-item label="截止时间" :label-width="formLabelWidth">
+                                            <el-date-picker
+                                            v-model="value2"
+                                            type="date"
+                                            placeholder="选择日期">
+                                          </el-date-picker>
+                                          </el-form-item>
+                                        <el-form-item label="工作单位" :label-width="formLabelWidth">
+                                            <el-input v-model="input1" placeholder="请输入内容"></el-input>
+                                        </el-form-item>
+                                        <el-form-item label="职务岗位" :label-width="formLabelWidth">
+                                            <el-input v-model="input2" placeholder="请输入内容"></el-input>
+                                        </el-form-item>
+                                        <el-form-item label="证明文件" :label-width="formLabelWidth">
+                                            <el-upload
+                                            class="upload-demo"
+                                            action="https://jsonplaceholder.typicode.com/posts/"
+                                            :on-preview="handlePreview"
+                                            :on-remove="handleRemove"
+                                            :before-remove="beforeRemove"
+                                            multiple
+                                            :limit="3"
+                                            :on-exceed="handleExceed"
+                                            :file-list="fileList">
+                                            <el-button size="small" type="primary">点击上传</el-button>
+                                            <!-- <div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过500kb</div> -->
+                                            </el-upload>
+                                        </el-form-item>
+                                      </el-form>
+                                      
+                                      <div slot="footer" class="dialog-footer">
+                                        <el-button @click="dialogFormVisible = false">取 消</el-button>
+                                        <el-button type="primary" @click="dialogFormVisible = false">确 定</el-button>
+                                      </div>
+                                    </el-dialog>
+                                </div>
+                        </section>
+                        <img src="./img/index/main10_1.PNG" alt="">
+                        <section class="main103" id="main103">
+                            <form action="">
+                                <table border="1px" cellspacing="0">
+                                    <tr  height="40px">
+                                        <th>开始时间</th>
+                                        <th>截止时间</th>
+                                        <th style="width: 40%;">工作单位</th>
+                                        <th>职务岗位</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    <tr  height="40px">
+                                        <td>{{starttime}}</td>
+                                        <td>{{stoptime}}</td>
+                                        <td>{{workunit}}</td>
+                                        <td>{{job}}</td>
+                                        <td>
+                                            <span class="iconfont icon-bianji" style="color: cornflowerblue;">
+                                                <a href=""></a>
+                                            </span>
+                                            <span class="iconfont icon-shanchu" style="color: red;">
+                                                <a href=""></a>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </section>
+                    </section>
+                    <a href="" class="main10_save r">保 存</a>
+                </div>
+                <div class="main11" id="main11" style="display: none;">
+                    <div class="main01">
+                        <span>职称评审</span>
+                        <a href="">返回</a>
+                    </div>
+                    <section class="main111">
+                        <span class="iconfont icon-ziyuan1"></span>
+                        <span>工作总结</span>
+                        <section class="main112">
+                            <textarea name="" id="tExt" cols="30" rows="10" maxlength="10000"
+                             required style="width: 95%; height: 200px; resize: none; margin: 10px 0 0 30px;outline: none;">
+
+                            </textarea>
+                            <span class=" main11_tishi">
+                                当前已输入0个字符，您还可以输入10000个字符。
+                            </span>
+                        </section>
+                    </section>
+                    <a href="" class="main11_save r">保 存</a>
+                </div>
+                <div class="main12" id="main12" style="display: none;">
+                    <div class="main01">
+                        <span>职称评审</span>
+                        <a href="">返回</a>
+                    </div>
+                    <section class="main121">
+                        <section class="main122">
+                            <span style="font-weight: bold; color: rgb(31, 103, 185);">
+                                其他材料</span>
+                                <!-- <a href="" class="xinzeng r">新 增</a> -->
+                                <div id="main12_app">
+                                    <!-- Table -->                                   
+                                    <!-- Form -->
+                                    <el-button type="text" @click="dialogFormVisible = true" style="color: white;margin: 0 0 0px 20px;">新增</el-button>
+                                   
+                                    <el-dialog title="其他材料" :visible.sync="dialogFormVisible">
+                                      <el-form :model="form">
+                                        
+                                        <el-form-item label="标题" :label-width="formLabelWidth">
+                                            <el-input v-model="input1" placeholder="请输入内容"></el-input>
+                                        </el-form-item>
+                                        <el-form-item label="证明文档" :label-width="formLabelWidth">
+                                            <el-upload
+                                            class="upload-demo"
+                                            action="https://jsonplaceholder.typicode.com/posts/"
+                                            :on-preview="handlePreview"
+                                            :on-remove="handleRemove"
+                                            :before-remove="beforeRemove"
+                                            multiple
+                                            :limit="3"
+                                            :on-exceed="handleExceed"
+                                            :file-list="fileList1">
+                                            <el-button size="small" type="primary">点击上传</el-button>
+                                            <!-- <div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过500kb</div> -->
+                                            </el-upload>
+                                        </el-form-item>
+                                        <el-form-item label="证明图片" :label-width="formLabelWidth">
+                                            <el-upload
+                                            class="upload-demo"
+                                            action="https://jsonplaceholder.typicode.com/posts/"
+                                            :on-preview="handlePreview"
+                                            :on-remove="handleRemove"
+                                            :before-remove="beforeRemove"
+                                            multiple
+                                            :limit="3"
+                                            :on-exceed="handleExceed"
+                                            :file-list="fileList2">
+                                            <el-button size="small" type="primary">点击上传</el-button>
+                                            <!-- <div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过500kb</div> -->
+                                            </el-upload>
+                                        </el-form-item>
+                                      </el-form>
+                                      
+                                      <div slot="footer" class="dialog-footer">
+                                        <el-button @click="dialogFormVisible = false">取 消</el-button>
+                                        <el-button type="primary" @click="dialogFormVisible = false">确 定</el-button>
+                                      </div>
+                                    </el-dialog>
+                                </div>
+                        </section>
+                        <img src="./img/index/main12_1.PNG" alt="">
+                        <section class="main123" id="main123">
+                            <form action="">
+                                <table border="1px" cellspacing="0">
+                                    <tr  height="40px">
+                                        <th style="width:80%">标题</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    <tr  height="40px">
+                                        <td>{{title}}</td>
+                                        <td>
+                                            <span class="iconfont icon-bianji" style="color: cornflowerblue;">
+                                                <a href=""></a>
+                                            </span>
+                                            <span class="iconfont icon-shanchu" style="color: red;">
+                                                <a href=""></a>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </section>
+                    </section>
+                    <a href="" class="main12_save r">保 存</a>
+                </div>
+                <div class="main13" id="main13" style="display: none;">
+                    <div class="main01">
+                        <span>职称评审</span>
+                        <a href="">返回</a>
+                    </div>
+                    <section class="main131">
+                        <img src="./img/index/main13_1.PNG" alt="">
+  
+                    </section>
+                    <a href="" class="main13_save">同意并报送</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+     <script>
+        var main0 = document.getElementById("main0");
+        var main1 = document.getElementById("main1");
+        var main2 = document.getElementById("main2");
+        var main3 = document.getElementById("main3");
+        var main4 = document.getElementById("main4");
+        var main5 = document.getElementById("main5");
+        var main6 = document.getElementById("main6");
+        var main7 = document.getElementById("main7");
+        var main8 = document.getElementById("main8");
+        var main9 = document.getElementById("main9");
+        var main10 = document.getElementById("main10");
+        var main11= document.getElementById("main11");
+        var main12 = document.getElementById("main12");
+        var main13 = document.getElementById("main13"); 
+
+        var main0Li = document.getElementById("main0Li");
+        var main1Li = document.getElementById("main1Li");
+        var main2Li = document.getElementById("main2Li");
+        var main3Li = document.getElementById("main3Li");
+        var main4Li = document.getElementById("main4Li");
+        var main5Li = document.getElementById("main5Li");
+        var main6Li = document.getElementById("main6Li");
+        var main7Li = document.getElementById("main7Li");
+        var main8Li = document.getElementById("main8Li");
+        var main9Li = document.getElementById("main9Li");
+        var main10Li = document.getElementById("main10Li");
+        var main11Li= document.getElementById("main11Li");
+        var main12Li = document.getElementById("main12Li");
+        var main13Li = document.getElementById("main13Li");
+        
+        main0Li.onclick = function(){
+            main0.style.display = "block";
+            main1.style.display = "none";
+            main2.style.display = "none";
+            main3.style.display = "none";
+            main4.style.display = "none";
+            main5.style.display = "none";
+            main6.style.display = "none";
+            main7.style.display = "none";
+            main8.style.display = "none";
+            main9.style.display = "none";
+            main10.style.display = "none";
+            main11.style.display = "none";
+            main12.style.display = "none";
+            main13.style.display = "none";
+        }
+
+        main1Li.onclick = function(){
+            main0.style.display = "none";
+            main1.style.display = "block";
+            main2.style.display = "none";
+            main3.style.display = "none";
+            main4.style.display = "none";
+            main5.style.display = "none";
+            main6.style.display = "none";
+            main7.style.display = "none";
+            main8.style.display = "none";
+            main9.style.display = "none";
+            main10.style.display = "none";
+            main11.style.display = "none";
+            main12.style.display = "none";
+            main13.style.display = "none";
+        }
+
+        main2Li.onclick = function(){
+            main0.style.display = "none";
+            main1.style.display = "none";
+            main2.style.display = "block";
+            main3.style.display = "none";
+            main4.style.display = "none";
+            main5.style.display = "none";
+            main6.style.display = "none";
+            main7.style.display = "none";
+            main8.style.display = "none";
+            main9.style.display = "none";
+            main10.style.display = "none";
+            main11.style.display = "none";
+            main12.style.display = "none";
+            main13.style.display = "none";
+        }
+
+        main3Li.onclick = function(){
+            main0.style.display = "none";
+            main1.style.display = "none";
+            main2.style.display = "none";
+            main3.style.display = "block";
+            main4.style.display = "none";
+            main5.style.display = "none";
+            main6.style.display = "none";
+            main7.style.display = "none";
+            main8.style.display = "none";
+            main9.style.display = "none";
+            main10.style.display = "none";
+            main11.style.display = "none";
+            main12.style.display = "none";
+            main13.style.display = "none";
+        }
+
+        main4Li.onclick = function(){
+            main0.style.display = "none";
+            main1.style.display = "none";
+            main2.style.display = "none";
+            main3.style.display = "none";
+            main4.style.display = "block";
+            main5.style.display = "none";
+            main6.style.display = "none";
+            main7.style.display = "none";
+            main8.style.display = "none";
+            main9.style.display = "none";
+            main10.style.display = "none";
+            main11.style.display = "none";
+            main12.style.display = "none";
+            main13.style.display = "none";
+        }
+
+        main5Li.onclick = function(){
+            main0.style.display = "none";
+            main1.style.display = "none";
+            main2.style.display = "none";
+            main3.style.display = "none";
+            main4.style.display = "none";
+            main5.style.display = "block";
+            main6.style.display = "none";
+            main7.style.display = "none";
+            main8.style.display = "none";
+            main9.style.display = "none";
+            main10.style.display = "none";
+            main11.style.display = "none";
+            main12.style.display = "none";
+            main13.style.display = "none";
+        }
+
+        main6Li.onclick = function(){
+            main0.style.display = "none";
+            main1.style.display = "none";
+            main2.style.display = "none";
+            main3.style.display = "none";
+            main4.style.display = "none";
+            main5.style.display = "none";
+            main6.style.display = "block";
+            main7.style.display = "none";
+            main8.style.display = "none";
+            main9.style.display = "none";
+            main10.style.display = "none";
+            main11.style.display = "none";
+            main12.style.display = "none";
+            main13.style.display = "none";
+        }
+
+        main7Li.onclick = function(){
+            main0.style.display = "none";
+            main1.style.display = "none";
+            main2.style.display = "none";
+            main3.style.display = "none";
+            main4.style.display = "none";
+            main5.style.display = "none";
+            main6.style.display = "none";
+            main7.style.display = "block";
+            main8.style.display = "none";
+            main9.style.display = "none";
+            main10.style.display = "none";
+            main11.style.display = "none";
+            main12.style.display = "none";
+            main13.style.display = "none";
+        }
+
+        main8Li.onclick = function(){
+            main0.style.display = "none";
+            main1.style.display = "none";
+            main2.style.display = "none";
+            main3.style.display = "none";
+            main4.style.display = "none";
+            main5.style.display = "none";
+            main6.style.display = "none";
+            main7.style.display = "none";
+            main8.style.display = "block";
+            main9.style.display = "none";
+            main10.style.display = "none";
+            main11.style.display = "none";
+            main12.style.display = "none";
+            main13.style.display = "none";
+        }
+
+        main9Li.onclick = function(){
+            main0.style.display = "none";
+            main1.style.display = "none";
+            main2.style.display = "none";
+            main3.style.display = "none";
+            main4.style.display = "none";
+            main5.style.display = "none";
+            main6.style.display = "none";
+            main7.style.display = "none";
+            main8.style.display = "none";
+            main9.style.display = "block";
+            main10.style.display = "none";
+            main11.style.display = "none";
+            main12.style.display = "none";
+            main13.style.display = "none";
+        }
+
+        main10Li.onclick = function(){
+            main0.style.display = "none";
+            main1.style.display = "none";
+            main2.style.display = "none";
+            main3.style.display = "none";
+            main4.style.display = "none";
+            main5.style.display = "none";
+            main6.style.display = "none";
+            main7.style.display = "none";
+            main8.style.display = "none";
+            main9.style.display = "none";
+            main10.style.display = "block";
+            main11.style.display = "none";
+            main12.style.display = "none";
+            main13.style.display = "none";
+        }
+
+        main11Li.onclick = function(){
+            main0.style.display = "none";
+            main1.style.display = "none";
+            main2.style.display = "none";
+            main3.style.display = "none";
+            main4.style.display = "none";
+            main5.style.display = "none";
+            main6.style.display = "none";
+            main7.style.display = "none";
+            main8.style.display = "none";
+            main9.style.display = "none";
+            main10.style.display = "none";
+            main11.style.display = "block";
+            main12.style.display = "none";
+            main13.style.display = "none";
+        }
+
+        main12Li.onclick = function(){
+            main0.style.display = "none";
+            main1.style.display = "none";
+            main2.style.display = "none";
+            main3.style.display = "none";
+            main4.style.display = "none";
+            main5.style.display = "none";
+            main6.style.display = "none";
+            main7.style.display = "none";
+            main8.style.display = "none";
+            main9.style.display = "none";
+            main10.style.display = "none";
+            main11.style.display = "none";
+            main12.style.display = "block";
+            main13.style.display = "none";
+        }
+
+        main13Li.onclick = function(){
+            main0.style.display = "none";
+            main1.style.display = "none";
+            main2.style.display = "none";
+            main3.style.display = "none";
+            main4.style.display = "none";
+            main5.style.display = "none";
+            main6.style.display = "none";
+            main7.style.display = "none";
+            main8.style.display = "none";
+            main9.style.display = "none";
+            main10.style.display = "none";
+            main11.style.display = "none";
+            main12.style.display = "none";
+            main13.style.display = "block";
+        }
+    </script>  
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- Element UI -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <!-- Profile Javascript -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="./js/main1.js"></script>
+    <script type="module" src="./js/main2.js"></script>
+    <script type="module" src="./js/main3.js"></script>
+    <script type="module" src="./js/main4.js"></script>
+    <script type="module" src="./js/main5.js"></script>
+    <script type="module" src="./js/main6.js"></script>
+    <script type="module" src="./js/main7.js"></script>
+    <script type="module" src="./js/main8.js"></script>
+    <script type="module" src="./js/main9.js"></script>
+    <script type="module" src="./js/main10.js"></script>
+    <script type="module" src="./js/main11.js"></script>
+    <script type="module" src="./js/main12.js"></script>
+    <script type="module" src="./js/index_js.js"></script>
+    
+    <script type="text/javascript">
+        
+    </script>
+</body>
+   
+</body>
+</html>
