@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/homePage/homePage",
+    "pages/logs/logs",
+    "pages/personal/personal",
+    "pages/chart/chart",
+    "pages/history/history",
+    "pages/book/book",
+    "pages/personal/personal_info/personal_info",
+    "pages/personal/advise/advise",
+    "pages/personal/about_jizhang/about_jizhang",
+    "pages/personal/law/law"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#109675",
+    "navigationBarTitleText": "AC简易记账本",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

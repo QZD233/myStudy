@@ -1,0 +1,52 @@
+<!--index.wxml-->
+<view class='pageBody'>
+  <view class="container">
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+    </view>
+  </view>
+</view>
+<view class='personalPageSetting'>
+  <!-- 我的信息页跳转 -->
+  <navigator url="personal_info/personal_info" class="weui-cell weui-cell_access line_top navgiter_text_color" hover-class="weui-cell_active">
+    <view class="weui-cell__hd">
+      <image src="../../img/nager_img/personal.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+    </view>
+    <view class="weui-cell__bd">我的信息</view>
+  </navigator>
+  <!-- 我的账单页跳转 -->
+  <navigator url="../history/history" class="weui-cell weui-cell_access line_bottom navgiter_text_color" hover-class="weui-cell_active">
+    <view class="weui-cell__hd">
+      <image src="../../img/nager_img/account.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+    </view>
+    <view class="weui-cell__bd">我的账单</view>
+  </navigator>
+</view>
+<!-- 将布局分层，好看一些 -->
+<view class='ZCmode'>
+  <!-- 意见反馈跳转 -->
+  <navigator url='advise/advise' class='weui-cell weui-cell_access line_top navgiter_text_color' hover-class='weui-cell_active'>
+    <view class='weui-cell__hd'>
+      <image src='../../img/nager_img/advise.png' style='margin-right: 5px;vertical-align:middle;width:20px;height:20px;'></image>
+    </view>
+    <view class='weui-cell__hd'>建议反馈</view>
+  </navigator>
+  <!-- 这里写的是我们的小程序历史跳转 -->
+  <navigator url="about_jizhang/about_jizhang" class="weui-cell weui-cell_access navgiter_text_color" hover-class="weui-cell_active">
+    <view class="weui-cell__hd">
+      <image src="../../img/nager_img/about.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+    </view>
+    <view class="weui-cell__bd">关于记账</view>
+  </navigator>
+  <!-- 法律信息跳转 -->
+  <navigator url="law/law" class="weui-cell weui-cell_access line_bottom navgiter_text_color" hover-class="weui-cell_active">
+    <view class="weui-cell__hd">
+      <image src="../../img/nager_img/law.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+    </view>
+    <view class="weui-cell__bd">法律信息</view>
+  </navigator>
+</view>

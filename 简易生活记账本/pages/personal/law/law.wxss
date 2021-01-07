@@ -1,0 +1,4 @@
+/* pages/personal/law/law.wxss */
+.font_color{
+  color: white;
+}

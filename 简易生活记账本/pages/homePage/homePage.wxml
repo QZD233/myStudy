@@ -1,0 +1,53 @@
+<!--pages/homePage.wxml-->
+<view class='pageBody'>
+<!-- 第一行内容 -->
+  <view class='one_hang'>
+    <icon type="circle" size="23"></icon>
+    <button wx:if="{{!hasUserInfo && canIUse}}" class="weui-btn" type="warn" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取昵称 </button>
+    <block wx:else>
+      <text class="userinfo-nickname"> {{userInfo.nickName}}</text>
+    </block>
+    <button size='mini' class='lishijili' bindtap="toHistory">历史记录</button>
+  </view>
+  <!-- 第二行内容，时间、收入显示 -->
+  <view class='two_hang'>
+    <view class='two_hang_data'>{{data}}</view>
+    <view class='two_hang_money'>
+      <view class='two_hang_money-item-title'>收入</view>
+      <view class='two_hang_money-item-title'>支出</view>
+    </view>
+    <view class='two_hang_money'>
+      <view class='two_hang_money-item'>{{account.user_info.income}}</view>
+      <view class='two_hang_money-item'>{{account.user_info.outcome}}</view>
+    </view>
+    <view class='two_hang_money_difference'>收支差</view>
+    <view class='two_hang_money_difference'>{{account.user_info.comeMoney}}</view>
+
+    <!-- 如果前期获取数据失败，则可以点击按钮获取数据 -->
+    <view class='two_hang_money_difference' wx:if="{{angin_getUserInfo}}">
+      <button size='mini' type="warn" bindtap='anginGetInfo'>重新获取数据</button>
+    </view>
+
+  </view>
+  <!-- 第三行内容，记账按钮 -->
+  <view class='three_hang'>
+    <view>
+      <image src='/././img/addInfo.png' mode="aspectFit" class='add_img' bindtap='toBook'></image>
+    </view>
+  </view>
+  <!-- 第四行内容，导航栏 -->
+  <view class='four_hang'>
+    <view class='tabBer'>
+      <view class="tabBar-item">
+        <navigator url='../chart/chart'>
+          <image src='/././img/tabBer_img/chart.png' mode='aspectFit' class='tabBer_img'></image>
+        </navigator>
+      </view>
+      <view class="tabBar-item">
+        <navigator url='../personal/personal'>
+          <image src='/././img/tabBer_img/me.png' mode='aspectFit' class='tabBer_img'></image>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

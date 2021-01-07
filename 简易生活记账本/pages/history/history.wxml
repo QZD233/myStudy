@@ -1,0 +1,22 @@
+<!--pages/history/history.wxml-->
+<view class='pageBody'>
+</view>
+
+<view class="weui-form-preview gekai" wx:for="{{account}}" wx:key="{{index}}">
+    <view class="weui-form-preview__hd">
+      <view class="weui-form-preview__item">
+        <view class="weui-form-preview__label">金额</view>
+        <view class="weui-form-preview__value_in-hd">{{item.money}}￥</view>
+      </view>
+    </view>
+    <view class="weui-form-preview__bd">
+      <view class="weui-form-preview__item">
+        <view class="weui-form-preview__label">时间</view>
+        <view class="weui-form-preview__value">{{item.time}}</view>
+      </view>
+      <view class="weui-form-preview__item">
+        <view class="weui-form-preview__label">备注</view>
+        <view class="weui-form-preview__value">{{item.beizhu}}</view>
+      </view>
+    </view>
+  </view>

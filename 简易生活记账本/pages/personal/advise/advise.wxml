@@ -1,0 +1,18 @@
+<!--pages/personal/advise/advise.wxml-->
+<view class='pageBody'>
+  <!-- 建议内容 -->
+  <form bindsubmit="formSubmit">
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__bd">
+          <textarea name="inputArea" class="weui-textarea" placeholder="建议内容" style="height: 12em"/>
+          <view class="weui-textarea-counter">{{data}}</view>
+        </view>
+      </view>
+    </view>
+    <!-- 提交按钮 -->
+    <view class="weui-btn-area">
+      <button class="weui-btn" form-type="submit" type="default">记录</button>
+    </view>
+  </form>
+</view>

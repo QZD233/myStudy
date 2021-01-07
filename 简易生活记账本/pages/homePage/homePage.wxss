@@ -1,0 +1,81 @@
+/* pages/homePage.wxss */
+
+.one_hang {
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.lishijili {
+  float: right;
+}
+
+.two_hang {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.two_hang_data {
+  color: #333366;
+  font-size: 18px;
+}
+
+.two_hang_money {
+  display: flex;
+}
+
+.two_hang_money-item-title{
+  flex: 1;
+  padding: 0 10px;
+  text-align: center;
+  color: #CCFFCC;
+  font-size: 20px;
+}
+
+.two_hang_money-item {
+  flex: 1;
+  padding: 0 10px;
+  text-align: center;
+  color: #CCFFCC;
+  font-size: 30px;
+}
+
+.two_hang_money_difference {
+  color: #66CCFF;
+  font-size: 35px;
+}
+
+.three_hang {
+  margin-top: 30%;
+  text-align: center;
+}
+
+.add_img {
+  width: 60px;
+  height: 60px;
+}
+
+.four_hang {
+  position: absolute;
+  bottom: 0px;
+}
+
+.tabBer {
+  width: 100%;
+  position: fixed;
+  bottom: 30px;
+  background-size: 100% 100%;
+}
+
+.tabBar-item {
+  float: left;
+  width: 50%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.tabBer_img {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}

@@ -1,0 +1,16 @@
+<!--pages/personal/law/law.wxml-->
+<view class='pageBody font_color'>
+  <view class="page__hd">
+    <view class="page__title">Law jizhang</view>
+    <view class="page__title">法律消息</view>
+  </view>
+  <view class="page__bd">
+    <view class="weui-article">
+      <view class="weui-article__section">
+        <view class="weui-article__p">
+          本程序开源，界面设计以及设计均由我们团队设计，如需采纳，需要表明出处。
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,22 @@
+/* pages/history/history.wxss */
+.pay{
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #66CCFF;
+}
+
+.payTitle{
+  font-size: 35px;
+}
+
+.payInfo{
+  font-size: 20px;
+}
+
+.gekai{
+  margin-bottom: 30px;
+}
+
+.weui-form-preview {
+  background-color: #fff;
+}

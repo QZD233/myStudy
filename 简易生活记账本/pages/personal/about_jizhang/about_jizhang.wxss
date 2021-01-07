@@ -1,0 +1,4 @@
+/* pages/personal/about_jizhang/about_jizhang.wxss */
+.font_color{
+  color: white;
+}

@@ -1,0 +1,22 @@
+<!--pages/chart/chart.wxml-->
+<view class='pageBody'>
+  <view class="weui-panel">
+    <view class="weui-panel__hd">{{today}}</view>
+    <view class="weui-panel__bd">
+      <view class="weui-media-box weui-media-box_text">
+        <view class="weui-media-box__title weui-media-box__title_in-text">最近7次收入和支出分析</view>
+        <view class='container'>
+          <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ec}}"></ec-canvas>
+        </view>
+        <view class="weui-media-box__info">
+          <view class="weui-media-box__info__meta">AC简易生活</view>
+          <view class="weui-media-box__info__meta">11:18</view>
+          <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">生活支出分析</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="weui-footer ZC-footer">
+    <view class="weui-footer__text" style='color:white'>AC简易生活 © 2018-2019 贺志成</view>
+  </view>
+</view>

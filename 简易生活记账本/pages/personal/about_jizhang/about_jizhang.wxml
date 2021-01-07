@@ -1,0 +1,16 @@
+<!--pages/personal/about_jizhang/about_jizhang.wxml-->
+<view class='pageBody font_color'>
+  <view class="page__hd">
+    <view class="page__title">About jizhang</view>
+    <view class="page__title">关于记账本</view>
+  </view>
+  <view class="page__bd">
+    <view class="weui-article">
+      <view class="weui-article__section">
+        <view class="weui-article__p">
+          由贺志成进行前端、后端、服务器、数据库开发，覃智德进行界面、图片设计。
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
