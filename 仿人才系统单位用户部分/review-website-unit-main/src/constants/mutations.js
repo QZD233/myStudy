@@ -1,0 +1,19 @@
+// user
+const SET_ID = 'SET_ID'
+const SET_NAME = 'SET_NAME'
+const SET_PASSWORD = 'SET_PASSWORD'
+const SET_EMAIL = 'SET_EMAIL'
+const SET_PHONE = 'SET_PHONE'
+const SET_AVATAR = 'SET_AVATAR'
+const SET_CREATEDATE = 'SET_CREATEDATE'
+export default {
+  USER: {
+    SET_ID,
+    SET_NAME,
+    SET_PASSWORD,
+    SET_EMAIL,
+    SET_PHONE,
+    SET_AVATAR,
+    SET_CREATEDATE
+  }
+}
